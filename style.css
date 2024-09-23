@@ -1,0 +1,256 @@
+/*--------------------iMPORTS DE LAS FUENTES--------------------*/
+
+/*Fuente Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*Montserrate*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Fuente Montserrat*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@314&family=Mukta+Vaani:wght@300;400;500;600;700;800&display=swap");
+/*--------------------iMPORTS DE LAS FUENTES--------------------*/
+
+/*--------------------NAVBAR--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: hsl(39, 35%, 85%) !important;
+}
+.navbar {
+  padding: 1rem;
+}
+.titulo {
+  color: var(--Negro, #0e0d0d);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.64px;
+  filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.8));
+}
+#corazon,
+#carrito {
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#carrito {
+  margin-right: 130px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.cta-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  border-radius: 12px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/*--------------------NAVBAR--------------------*/
+
+/*--------------------HEADER--------------------*/
+.headerIzquierda {
+  display: flex;
+  /*background-color: #23303f;*/
+}
+
+#botonExplorar {
+  margin-left: 5px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Multiples-8, 8px);
+  border-radius: 1px;
+  border: 1px solid var(--Verde, #92b869);
+  background: var(--Verde, #92b869);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.botonExplorarContainer {
+  padding: 15px;
+}
+.contenedorgeneral {
+  color: var(--Negro, #000);
+  -webkit-text-stroke-width: 0.800000011920929;
+  -webkit-text-stroke-color: var(--Negro, #000);
+  font-family: var(--font-family-title, Montserrat);
+  font-size: var(--font-size-size-lg, 24px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  text-transform: uppercase;
+  /*background-color: #2e7d32; */
+}
+.textoContainerIzquierda {
+  width: fit-content; /* Ajustamos el tamaño del contenedor al contenido */
+  height: fit-content; /* Ajustamos la altura */
+  display: flex;
+  flex-direction: column; /* Opcional, si deseas que todo esté en una columna */
+  align-items: center; /* Para centrar los elementos internos horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente dentro del contenedor */
+
+  padding: 20px; /* Espaciado interno */
+  /*background-color: #970d0d;*/
+}
+.subtituloIzquierda {
+  align-self: stretch;
+  color: var(--azul-30, #5c6171);
+  font-family: var(--font-family-description, "Mukta Vaani");
+  font-size: var(--font-size-size-xs, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*--------------------HEADER-IMAGENES--------------------*/
+#ImagenMitad {
+  width: 349px;
+  height: 404px;
+}
+
+.imagenesContainer {
+  display: flex;
+  margin: 30px;
+  justify-content: space-between; /* Ajusta el espacio entre las imágenes */
+  align-items: center; /* Alinea verticalmente en el centro */
+}
+
+.imagenIzquierdaContainer,
+.ImagenLargaMitadContainer {
+  flex: 1;
+  margin: 10px; /* Añade márgenes alrededor para evitar que las imágenes se toquen */
+}
+
+.imagenDerechaArribaContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.containerDerechaDoble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#imagenDerechaArriba {
+  margin-top: 120px;
+  width: 453px;
+  height: 152px;
+  border-radius: 6px;
+  background: url(<path-to-image>) lightgray 0px -89px / 100% 217.105% no-repeat;
+}
+
+#imagenDerechaAbajo {
+  height: 218px;
+  width: 442px;
+  margin-top: 20px;
+  border-radius: 6px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+#imagenIzquierda {
+  width: 489px;
+  height: 178px;
+  border-radius: 6px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#ImagenMitad {
+  width: 349px;
+  height: 404px;
+  margin-top: 120px;
+  border-radius: 6px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.containerBotonyGatoIzquierda {
+  padding-top: 185px;
+
+  width: 700px; /* Ajustamos el tamaño del contenedor al contenido */
+  height: fit-content; /* Ajustamos la altura */
+}
+.imagenIzquierdaContainer {
+  margin-left: 5px;
+}
+
+.textoContainerIzquierda {
+  margin-left: -5px;
+}
+/*--------------------HEADER-IMAGENES--------------------*/
+
+/*--------------------HEADER--------------------*/
+
+/*--------------------Textos y fuentes del Header--------------------*/
+
+#TextoIzquierdaTitulo {
+  color: hsla(0, 0%, 0%, 1);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  top: 2.5px;
+  border: 0.8px;
+  left: 2.5px;
+  font-weight: 1000;
+  line-height: 32px;
+  border: 0.8px;
+  font-size: var(--font-size-size-xs, 24px);
+}
+
+#subtituloIzquierda {
+  color: hsla(226, 10%, 40%, 1);
+  font-size: var(--font-size-size-xs, 12px);
+
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19.94px;
+}
+
+/*--------------------Textos y fuentes del Header--------------------*/
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .explore-button {
+    padding: 10px;
+    width: 100%;
+  }
+}
