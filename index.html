@@ -82,7 +82,9 @@
         <div class="imagenesContainer">
                 <div class="containerBotonyGatoIzquierda">
                     <div class="textoContainerIzquierda"> <!--contiene imagen, texto y boton de la izquierda-->
-                        <h2 id="TextoIzquierdaTitulo">Descubre productos unicos <br> a precios que te soprenderan</h2>
+                        <div class="textoIzquierdatexto">
+                        <h2 id="TextoIzquierdaTitulo"><span class="verdeTextoHeader">Descubre</span> productos <span class="verdeTextoHeader">unicos</span> <br> a precios que te <br> <span class="verdeTextoHeader">soprenderan.</span></h2>
+                        </div>
                         <h3 class="subtituloIzquierda">Unete a nuestra comunidad para comprar y vender de manera facil, segura y sostenible, mientras <br> cuidas el planeta y encuentras tesoros unicos</h3>
                     </div>
                         <!--Esto es el boton-->
@@ -112,94 +114,264 @@
                 <!--------------------------HEADER-------------------------->
 </header>
 
-                <!--------------------------Section Best Sellers-------------------------->
-<section class="sectionBestSellers">
-    <div class="bestSellersTittleContainer"> <!--------contenedor del titulo, solo contiene al titulo de mejores vendedores------->
-        <h2 id="bestSellersTittle">Mejores Vendedores</h2>
-    </div>
-    <div class="principalContainerBestSellers"> <!------Contiene  todos los contenedores de las fotos, alineados con displays Flex en css-------->
-        
-        <div class="leftIconSellersContainer">
-            <img src="/img/Icons/arrow-left-circle.png" alt="" id="leftSellersIcon">
+<main>            <!--------------------------Section Best Sellers-------------------------->
+    <section class="sectionBestSellers">
+        <div class="bestSellersTittleContainer"> <!--------contenedor del titulo, solo contiene al titulo de mejores vendedores------->
+            <h2 id="bestSellersTittle">Mejores Vendedores</h2>
         </div>
+        <div class="principalContainerBestSellers"> <!------Contiene  todos los contenedores de las fotos, alineados con displays Flex en css-------->
+            
+            <div class="leftIconSellersContainer">
+                <img src="/img/Icons/arrow-left-circle.png" alt="" id="leftSellersIcon">
+            </div>
 
-        <div class="sellerContainerphoto1">
-            <img src="/img/BestSellersIMG/img1.jpeg" alt="" id="sellerPhoto1">
-        </div>
+            <div class="sellerContainerphoto1">
+                <img src="/img/BestSellersIMG/img1.jpeg" alt="" id="sellerPhoto1">
+            </div>
 
-        <div class="sellerContainerphoto2">
-            <img src="/img/BestSellersIMG/img2.jpeg" alt="" id="sellerPhoto2">
-        </div>
+            <div class="sellerContainerphoto2">
+                <img src="/img/BestSellersIMG/img2.jpeg" alt="" id="sellerPhoto2">
+            </div>
 
-        <div class="sellerContainerphoto3">
-            <img src="/img/BestSellersIMG/img3.jpeg" alt="" id="sellerPhoto3">
-        </div>
+            <div class="sellerContainerphoto3">
+                <img src="/img/BestSellersIMG/img3.jpeg" alt="" id="sellerPhoto3">
+            </div>
 
-        <div class="sellerContainerphoto4">
-            <img src="/img/BestSellersIMG/img4.jpeg" alt="" id="sellerPhoto4">
-        </div>
+            <div class="sellerContainerphoto4">
+                <img src="/img/BestSellersIMG/img4.jpeg" alt="" id="sellerPhoto4">
+            </div>
 
-        <div class="sellerContainerphoto5">
-            <img src="/img/BestSellersIMG/img5.jpeg" alt="" id="sellerPhoto5">
+            <div class="sellerContainerphoto5">
+                <img src="/img/BestSellersIMG/img5.jpeg" alt="" id="sellerPhoto5">
+            </div>
+            
+            <div class="rightIconSellersContainer">
+                <img src="/img/Icons/arrow-right-circle.png" alt="" id="rightSellersIcon">
+            </div>
+            
         </div>
-        
-        <div class="rightIconSellersContainer">
-            <img src="/img/Icons/arrow-right-circle.png" alt="" id="rightSellersIcon">
-        </div>
-        
-    </div>
-</section>
+    </section>
 
 
 
                 <!--------------------------Section Buscar Categoria-------------------------->
-<section class="sectionCategories">
-        <div class="categoriesTittleContainer"> <!--------contenedor del titulo, solo contiene al titulo de categorias------->
-                <h2 id="categoriesTittle">Buscar por categoria</h2>
-            </div>
+    <section class="sectionCategories">
+            <div class="categoriesTittleContainer"> <!--------contenedor del titulo, solo contiene al titulo de categorias------->
+                    <h2 id="categoriesTittle">Buscar por categoria</h2>
+                </div>
 
-        <div class="principalContainerCategories">
-            <div class="leftIconCategoriesContainer">
-                <img src="/img/Icons/arrow-left-circle.png" alt="" id="leftCategoriesIcon">
-            </div>
-            
-            <div class="leftIconCategoriesContainer"> <!--------Icono de flecha a la izquierda-------> <!--------Cada foto pertenece a su propio DIV------>
-            </div>
+            <div class="principalContainerCategories">
+                <div class="leftIconCategoriesContainer">
+                    <img src="/img/Icons/arrow-left-circle.png" alt="" id="leftCategoriesIcon">
+                </div>
+                
+                <div class="leftIconCategoriesContainer"> <!--------Icono de flecha a la izquierda-------> <!--------Cada foto pertenece a su propio DIV------>
+                </div>
 
-            <div class="categoriesContainerPhoto1"> <!--------Foto1Container------->
-                <img src="/img/CategoriesIMG/IMG1.jpeg" alt="" id="categoriesPhoto1"> <!--------Foto1------->
-                <h5>Computador</h5>
-            </div>
+                <div class="categoriesContainerPhoto1"> <!--------Foto1Container------->
+                    <img src="/img/CategoriesIMG/IMG1.jpeg" alt="" id="categoriesPhoto1"> <!--------Foto1------->
+                    <h5>Computador</h5>
+                </div>
 
-            <div class="categoriesContainerPhoto2">  <!--------Foto2Container------->
-            <img src="/img/CategoriesIMG/IMG2.jpeg" alt="" id="categoriesPhoto2"> <!--------Foto2------->
-                <h5>SmartPhone</h5>
-            </div>
+                <div class="categoriesContainerPhoto2">  <!--------Foto2Container------->
+                <img src="/img/CategoriesIMG/IMG2.jpeg" alt="" id="categoriesPhoto2"> <!--------Foto2------->
+                    <h5>SmartPhone</h5>
+                </div>
 
-            <div class="categoriesContainerPhoto3"> <!--------Foto3Container------->
-                <img src="/img/CategoriesIMG/IMG3.jpeg" alt="" id="categoriesPhoto3"> <!--------Foto3------->
-                <h5>HeadPhones</h5>
-            </div>
+                <div class="categoriesContainerPhoto3"> <!--------Foto3Container------->
+                    <img src="/img/CategoriesIMG/IMG3.jpeg" alt="" id="categoriesPhoto3"> <!--------Foto3------->
+                    <h5>HeadPhones</h5>
+                </div>
 
-            <div class="categoriesContainerPhoto4"> <!--------Foto4Container------->
-                <img src="/img/CategoriesIMG/IMG4.jpeg" alt="" id="categoriesPhoto4"> <!--------Foto4------->
-                <h5>Accesorios</h5>
+                <div class="categoriesContainerPhoto4"> <!--------Foto4Container------->
+                    <img src="/img/CategoriesIMG/IMG4.jpeg" alt="" id="categoriesPhoto4"> <!--------Foto4------->
+                    <h5>Accesorios</h5>
+                </div>
+                <div class="categoriesContainerPhoto5"> <!--------Foto5Container------->
+                    <img src="/img/CategoriesIMG/IMG5.jpeg" alt="" id="categoriesPhoto5"> <!--------Foto5------->
+                    <h5>Camaras</h5>
+                </div>
+                <div class="categoriesContainerPhoto6"> <!--------Foto6Container------->
+                    <img src="/img/CategoriesIMG/IMG6.jpeg" alt="" id="categoriesPhoto6"> <!--------Foto6------->
+                    <h5>TV & Hogar</h5>
+                </div>
+                
+                <div class="rightIconCategoriesContainer"> <!--------Icono de flecha a la derecha------->
+                    <img src="/img/Icons/arrow-right-circle.png" alt="" id="rightCategoriesIcon">
+                </div>
+            </div>    
+    </section> 
+    
+    
+    <!--------------------------Section Exlora nuestros productos-------------------------->
+    <section>
+        <div class="tituloProductsContainer">
+            <h2 id="tituloOurProducts">Explora nuestro productos</h2>
+        </div>
+        <div class="containerProductsGeneral">
+    
+            <div class="containerprincipal2">
+                <div class="foto">
+                    <img src="/img/NuestrosProductosIMG/img.jpg" alt="" id="photoProducts">
+                </div>
+                    <div class="detailsContainer1">
+                        <div class="rating">
+                            <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                            <h4 id="resenas">(876)</h4>
+                        </div>
+                        <div class="tittlePorduct&priceContainer">
+                            <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                            <h3 id="generalPrice">250.000</h3>
+                        </div>
+                    </div>
+                <div>
+                    <div class="foto">
+                    <img src="/img/NuestrosProductosIMG/img 2.jpg" alt="" id="photoProducts">
+                    </div>
+                    <div class="detailsContainer1">
+                        <div class="rating">
+                            <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                            <h4 id="resenas">(876)</h4>
+                        </div>
+                        <div class="tittlePorduct&priceContainer">
+                            <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                            <h3 id="generalPrice">250.000</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="categoriesContainerPhoto5"> <!--------Foto5Container------->
-                <img src="/img/CategoriesIMG/IMG5.jpeg" alt="" id="categoriesPhoto5"> <!--------Foto5------->
-                <h5>Camaras</h5>
+            <div class="containerprincipal3">
+                <div class="foto">
+                    <img src="/img/NuestrosProductosIMG/img 3.jpg" alt="" id="photoProducts">
+                </div>
+                    <div class="detailsContainer1">
+                        <div class="rating">
+                            <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                            <h4 id="resenas">(876)</h4>
+                        </div>
+                        <div class="tittlePorduct&priceContainer">
+                            <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                            <h3 id="generalPrice">250.000</h3>
+                        </div>
+                    </div>
+                <div>
+                    <div class="foto">
+                    <img src="/img/NuestrosProductosIMG/img 4.jpg" alt="" id="photoProducts">
+                    </div>
+                    <div class="detailsContainer1">
+                        <div class="rating">
+                            <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                            <h4 id="resenas">(876)</h4>
+                        </div>
+                        <div class="tittlePorduct&priceContainer">
+                            <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                            <h3 id="generalPrice">250.000</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="categoriesContainerPhoto6"> <!--------Foto6Container------->
-                <img src="/img/CategoriesIMG/IMG6.jpeg" alt="" id="categoriesPhoto6"> <!--------Foto6------->
-                <h5>TV & Hogar</h5>
+            <div class="containerprincipal4">
+                    <div class="foto">
+                        <img src="/img/NuestrosProductosIMG/img 5.jpg" alt="" id="photoProducts">
+                    </div>
+                            <div class="detailsContainer1">
+                                <div class="rating">
+                                    <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                                    <h4 id="resenas">(876)</h4>
+                                </div>
+                                <div class="tittlePorduct&priceContainer">
+                                    <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                                    <h3 id="generalPrice">250.000</h3>
+                                </div>
+                            </div>
+                        <div>
+                            <div class="foto">
+                            <img src="/img/NuestrosProductosIMG/img (5).jpg" alt="" id="photoProducts">
+                            </div>
+                            <div class="detailsContainer1">
+                                <div class="rating">
+                                    <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                                    <h4 id="resenas">(876)</h4>
+                                </div>
+                                <div class="tittlePorduct&priceContainer">
+                                    <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                                    <h3 id="generalPrice">250.000</h3>
+                                </div>
+                            </div>
+                        </div>
+                
             </div>
-            
-            <div class="rightIconCategoriesContainer"> <!--------Icono de flecha a la derecha------->
-                <img src="/img/Icons/arrow-right-circle.png" alt="" id="rightCategoriesIcon">
+            <div class="containerprincipal5">
+                <div class="foto">
+                    <img src="/img/NuestrosProductosIMG/img (6).jpg" alt="" id="photoProducts">
+                </div>
+                <div class="detailsContainer1">
+                    <div class="rating">
+                        <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                        <h4 id="resenas">(876)</h4>
+                    </div>
+                    <div class="tittlePorduct&priceContainer">
+                        <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                        <h3 id="generalPrice">250.000</h3>
+                    </div>
+                </div>
+                    <div>
+                        <div class="foto">
+                        <img src="/img/NuestrosProductosIMG/img (7).jpg" alt="" id="photoProducts">
+                        </div>
+                        <div class="detailsContainer1">
+                            <div class="rating">
+                                <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                                <h4 id="resenas">(876)</h4>
+                            </div>
+                            <div class="tittlePorduct&priceContainer">
+                                <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                                <h3 id="generalPrice">250.000</h3>
+                            </div>
+                        </div>
+                    </div>
             </div>
-        </div>    
-</section>
+            <div class="containerprincipal6">
+                <div class="containerPhotoProduct1">
+                    <div>
+                        <div class="foto">
+                        <img src="/img/NuestrosProductosIMG/img.jpg" alt="" id="photoProducts">
+                        </div>
+                        <div class="detailsContainer1">
+                            <div class="rating">
+                                <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                                <h4 id="resenas">(876)</h4>
+                            </div>
+                            <div class="tittlePorduct&priceContainer">
+                                <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                                <h3 id="generalPrice">250.000</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="foto">
+                        <img src="/img/NuestrosProductosIMG/img 2.jpg" alt="" id="photoProducts">
+                        </div>
+                        <div class="detailsContainer1">
+                            <div class="rating">
+                                <img src="/img/NuestrosProductosIMG/Star.jpg" alt="" id="stars">
+                                <h4 id="resenas">(876)</h4>
+                            </div>
+                            <div class="tittlePorduct&priceContainer">
+                                <h3 id="tittleProduct">Portable Wshing machine, 11lbs capacity model 18nmf</h3>
+                                <h3 id="generalPrice">250.000</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
+<footer>
+    <h2>ggg</h2>
+</footer>
 
 
 
