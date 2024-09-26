@@ -496,3 +496,35 @@ flex-shrink: 0;
   filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.8));
   background-color: hsla(89, 36%, 71%, 1);
 }
+
+
+
+/*--------------Footer--------------*/
+
+.tituloIzquierdaFooterContainer{
+  background-color: #2e7d32;
+  display: flex;
+}
+.tituloFooter{
+  display: flex;
+  width: 625px;
+  height: 151px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.inputButton{
+  display: flex;
+  width: 511px;
+  height: 171px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+
