@@ -25,53 +25,57 @@
 
 
 <body>
-    <!--NavBar-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-                <h2 class="titulo">Merka Checheres</h2>
-                
-                <div class="latButtons d-flex align-items-center gap-2">
-                    <button type="button" class="btn btn-primary btn-sm">Inicio</button>
-                    <!-- Example single danger button -->
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Action
-                        </button>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Categorias</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
+    <!--------------------------NavBar-------------------------->
+    <nav>
+        <div class="navBarContainerGeneral">
+            <div class="navBarTittleContainer">
+                <h1 id="merkachecheresTittle">MerkaChecheres</h1>
+            </div>
+            <div class="NavbarItems"> <!-- esto contiene todos los elementos del navbar menos el titulo -->
+                <div class="navBarBotonesIzquierdaContainer">
+                    <div class="inicioButtonContainer">
+                        <button><span id="textInicioCategoriasCatalogoFuente">inicio </span></button>
                     </div>
-
-                    <button type="button" class="btn btn-primary btn-sm">Catalogo</button>
-                </div>
-
-                <div class="d-flex align-items-center">
-                    <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Buscar...">
-                        <button class="btn btn-success" type="button">
-                            <i class="bi bi-search"></i>
-                        </button>
+                    <div class="categoriasButtonContainer">
+                        <button><span id="textInicioCategoriasCatalogoFuente">Categorias </span></button>
+                    </div>
+                    <div class="catalogoButtonContainer">
+                        <button><span id="textInicioCategoriasCatalogoFuente">Catalogo </span></button>
                     </div>
                 </div>
-
-                <div class="d-flex align-items-center gap-2">
-                    <button type="button" class="btn btn-success btn-sm">Iniciar Sesión</button>
-                    <button type="button" class="btn btn-outline-success btn-sm">Crear Cuenta</button>
+                <div class="navbarSearchBarContainer">
+                    <div class="navbarSearchBar">
+                        <div><h2 id="navbarText">Busca Cualquier cosa..</h2></div>
+                    </div>
                 </div>
-
-                <div class="NavbarContainerIcons">
-                    <img src="/img/NavBar Icons/Heart.jpg" alt="" id="carrito">
-                    <img src="/img/NavBar Icons/ShoppingCartSimple.jpg" alt="" id="corazon">
+                <div class="navbarIniciarCrearCuentaContainer">
+                    <div class="iniciarSesionButtonContainer">
+                        <button id="iniciarSesionButton">Iniciar Sesion</button>
+                    </div>
+                    <div class="CrearCuentaButtonContainer">
+                        <button id="CrearCuentaButton">Crear Cuenta</button>
+                    </div>
                 </div>
+                <div class="navbarLogosContainer">
+                    <div class="corazonContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 27C16 27 3.5 20 3.5 11.5C3.5 9.99737 4.02062 8.54114 4.97328 7.37908C5.92593 6.21703 7.25178 5.42093 8.72525 5.12624C10.1987 4.83154 11.7288 5.05646 13.0551 5.76272C14.3814 6.46898 15.4221 7.61296 16 9.00001C16.5779 7.61296 17.6186 6.46898 18.9449 5.76272C20.2712 5.05646 21.8013 4.83154 23.2748 5.12624C24.7482 5.42093 26.0741 6.21703 27.0267 7.37908C27.9794 8.54114 28.5 9.99737 28.5 11.5C28.5 20 16 27 16 27Z" stroke="#0E0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="carritoContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M11.25 27C11.25 27.6904 10.6904 28.25 10 28.25C9.30964 28.25 8.75 27.6904 8.75 27C8.75 26.3096 9.30964 25.75 10 25.75C10.6904 25.75 11.25 26.3096 11.25 27Z" fill="white" stroke="#0E0D0D" stroke-width="1.5"/>
+                            <path d="M24.25 27C24.25 27.6904 23.6904 28.25 23 28.25C22.3096 28.25 21.75 27.6904 21.75 27C21.75 26.3096 22.3096 25.75 23 25.75C23.6904 25.75 24.25 26.3096 24.25 27Z" fill="white" stroke="#0E0D0D" stroke-width="1.5"/>
+                            <path d="M5.2875 9H27.7125L24.4125 20.55C24.2948 20.9692 24.0426 21.3381 23.6948 21.6001C23.3471 21.862 22.9229 22.0025 22.4875 22H10.5125C10.0771 22.0025 9.65293 21.862 9.30515 21.6001C8.95738 21.3381 8.70524 20.9692 8.5875 20.55L4.0625 4.725C4.0027 4.51594 3.8764 4.33207 3.70271 4.20125C3.52903 4.07042 3.31744 3.99977 3.1 4H1" stroke="#0E0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </nav>
-    
-    
-                    <!--------------------------HEADER-------------------------->
+
+<!--------------------------HEADER-------------------------->
 
 <header class="headerIzquierda">
     
@@ -370,15 +374,82 @@
 </main>
 
 <footer>
-    <div class="tituloIzquierdaFooterContainer">
-        <div class="tituloFooter">
-        <h2>Unete a nuestra comunidad y <br>recibe descuentos y noticias <br> directamente en tu correo</h2>
+    <div >
+        <div class="tituloIzquierdaFooterContainer">
+            <div class="tituloFooter">
+            <h2 id="tituloFooterTexto">Unete a nuestra comunidad y <br>recibe descuentos y noticias <br> directamente en tu correo</h2>
+            </div>
+            <div class="inputysuscribeContainer">
+                <div class="inputContainer">
+                    <div class="input-con-icono">
+                        <img src="/img/Icons/email-removebg-preview.png" alt="">
+                        <input type="email" placeholder=" ingresa tu Correo Electronico" id="inputButton">
+                    </div>
+                </div>
+                <div class="suscribeteContainer">
+                    <button id="suscribeteButton"> <span id="suscribetetext0">Suscribete ahora </span></button>
+                </div>
+            </div>
         </div>
-        <div class="inputButton">
-        <input type="email" placeholder="ingresa tu Correo Electronico"> 
-        <button>Suscribete ahora</button>
-        </div>
+        <footer class="containerFooterAbajo">
+            <div class="ContainerGeneralTextosFooter">
+                <div>
+                    <div class="sobrenosotrosContainer">
+                    <h2 class="titulosFooterAbajo">Sobre Nosotros</h2>
+                    <div class="SubtitulosFooterAbajoContainer">
+                        <h3 class="SubtitulosFuentesFooter">inicio</h3>
+                        <h3 class="SubtitulosFuentesFooter">Catalogo de Productos</h3>
+                        <h3 class="SubtitulosFuentesFooter">Como Funciona</h3>
+                        <h3 class="SubtitulosFuentesFooter">Contacto</h3>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="EnlacesUtilesContainer">
+                            <h2 class="titulosFooterAbajo">Enlaces Útiles</h2>
+                        <div>
+                            <h3 class="SubtitulosFuentesFooter">inicio</h3>
+                            <h3 class="SubtitulosFuentesFooter">Catalogo de Productos</h3>
+                            <h3 class="SubtitulosFuentesFooter">Como Funciona</h3>
+                            <h3 class="SubtitulosFuentesFooter">Contacto</h3>
+                        </div>    
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="soporteAlClienteContainer">
+                            <h2 class="titulosFooterAbajo">Soprte al cliente</h2>
+                        <div>
+                            <h3 class="SubtitulosFuentesFooter">inicio</h3>
+                            <h3 class="SubtitulosFuentesFooter">Catalogo de Productos</h3>
+                            <h3 class="SubtitulosFuentesFooter">Como Funciona</h3>
+                            <h3 class="SubtitulosFuentesFooter">Contacto</h3>
+                        </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="contactoContainer">
+                    <div >
+                        <div class="titulosFooterAbajo">Contacto</div>
+                        <div>
+                            <h3 class="SubtitulosFuentesFooter">merkachecheres@gmail.com</h3>
+                            <h3 class="SubtitulosFuentesFooter">+57 3235845852</h3>
+                            <h3 class="SubtitulosFuentesFooter">X: @MerKachecheres</h3>
+                            <h3 class="SubtitulosFuentesFooter">Facebook: MerKachecheres</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
+        <div class="derechosReservadosContainer">
+            <h3 id="derechosReservadosTexto">
+            © 2024 Merkachécheres. Todos los derechos reservados. Los productos, imágenes y <br> descripciones publicados son propiedad de sus respectivos dueños. Merkachécheres no se <br> hace responsable por la precisión del contenido publicado por los usuarios. <br>Consulta nuestros términos y condiciones para más información
+            </h3>
+            
+        </div>
+    </footer>
 </footer>
 
 
