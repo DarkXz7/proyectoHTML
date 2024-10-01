@@ -124,6 +124,13 @@ gap: var(--font-size-size-lg, 24px);
   border: none; /* Eliminar bordes */
   cursor: pointer; /* Cambiar cursor al pasar por el botón */
   font-family: var(--font-family-title, Montserrat);
+  color: var(--Negro, #000);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-weight: 500;
   
   
 }
