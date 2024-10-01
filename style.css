@@ -18,10 +18,37 @@ body {
   display: flex;
   
 }
-
+.navBarTittleContainer{
+  display: flex;
+  margin-left: -200px;
+}
+.navBarBotonesIzquierdaContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .inicioButtonContainer,.catalogoButtonContainer,.catalogoButtonContainer,.navbarSearchBarContainer,.iniciarSesionButtonContainer,.CrearCuentaButtonContainer,.navbarLogosContainer,.categoriasButtonContainer{
   margin-left: 26px;
 }
+.navbarSearchBarContainer{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.inicioButton,.catalogoButton,.catalogoButton{
+  background-color: transparent; /* Fondo transparente */
+border: none !important ; /* Sin borde */
+outline: none; /* Elimina el contorno de enfoque */
+border: 1px solid var(--verde-40);
+  background: var(--verde-40);
+  
+  
+}
+nav{
+  margin-top: 24px;
+}
+
 #textInicioCategoriasCatalogoFuente{
   color: var(--Negro, #000);
 text-align: center;
@@ -30,6 +57,7 @@ font-size: var(--font-size-size-xs, 12px);
 font-style: normal;
 font-weight: 500;
 line-height: 16px; /* 133.333% */
+
 }
 #merkachecheresTittle{
   color: var(--Negro, #0E0D0D);
@@ -52,6 +80,9 @@ border-radius: 2px;
 background: var(--Blanco, #FFF);
 align-items: center;
 }
+
+
+
 
 #navbarText{
   padding-top: 5px;
@@ -79,7 +110,10 @@ gap: var(--font-size-size-lg, 24px);
   border: 1px solid var(--verde-40, #A4C482);
   background: var(--verde-40, #A4C482);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
 }
+
+
 
 #iniciarSesionButton,#CrearCuentaButton{
   background: var(--verde-40, #A4C482);
@@ -88,6 +122,7 @@ gap: var(--font-size-size-lg, 24px);
   font-size: 16px;
   border: none; /* Eliminar bordes */
   cursor: pointer; /* Cambiar cursor al pasar por el botón */
+  
 }
 #iniciarSesionButton,#CrearCuentaButton:hover{
   background: #92B869;
@@ -103,8 +138,20 @@ flex-shrink: 0;
 .navBarContainerGeneral{
   justify-content: center;
   align-items: center;
-}
+  display: flex;
 
+  
+}
+nav{
+  margin-left: 250px;
+  display: flex;
+height: 108px;
+padding: var(--font-size-size-md, 20px) 60px;
+justify-content: center;
+align-items: center;
+gap: 26px;
+flex-shrink: 0;
+align-self: stretch;}
 
 /*--------------------NAVBAR--------------------*/
 
@@ -114,6 +161,7 @@ flex-shrink: 0;
   align-items: center;
   display: flex;
   /*background-color: #23303f;*/
+  margin-top: -120px;
 }
 
 #botonExplorar {
@@ -149,12 +197,15 @@ flex-shrink: 0;
   height: fit-content; /* Ajustamos la altura */
   display: flex;
   flex-direction: column; /* Opcional, si deseas que todo esté en una columna */
-  align-items: center; /* Para centrar los elementos internos horizontalmente */
-  justify-content: center; /* Centra el contenido verticalmente dentro del contenedor */
-
-  padding: 20px; /* Espaciado interno */
+   /* Para centrar los elementos internos horizontalmente */
+   /* Centra el contenido verticalmente dentro del contenedor */
+  padding: 10px; /* Espaciado interno */
   /*background-color: #970d0d;*/
+  align-items:center;
+  
+
 }
+
 .subtituloIzquierda {
   align-self: stretch;
   color: var(--azul-30, #5c6171);
@@ -183,6 +234,12 @@ flex-shrink: 0;
 .ImagenLargaMitadContainer {
   flex: 1;
   margin: 10px; /* Añade márgenes alrededor para evitar que las imágenes se toquen */
+}
+.ImagenLargaMitadContainer{
+  margin-right:25px;
+}
+.containerDerechaDoble{
+  margin-right: 100px;
 }
 
 .imagenDerechaArribaContainer {
@@ -234,9 +291,9 @@ flex-shrink: 0;
 }
 
 .containerBotonyGatoIzquierda {
-  padding-top: 185px;
-
-  width: 700px; /* Ajustamos el tamaño del contenedor al contenido */
+  padding-top: 140px;
+  margin-left: 100px;
+  width: 509px; /* Ajustamos el tamaño del contenedor al contenido */
   height: fit-content; /* Ajustamos la altura */
 }
 .imagenIzquierdaContainer {
@@ -254,7 +311,7 @@ flex-shrink: 0;
 
 
 .textoIzquierdatexto{
-  margin-left: -125px;
+  margin-left: -65px;
 }
 .verdeTextoHeader{
   background-color:  hsla(89, 36%, 71%, 1);;
@@ -286,7 +343,9 @@ flex-shrink: 0;
   font-weight: 400;
   font-style: normal;
   line-height: 19.94px;
+
 }
+
 
 /*--------------------Textos y fuentes del Header--------------------*/
 
