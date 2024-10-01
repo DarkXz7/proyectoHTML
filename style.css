@@ -1,13 +1,7 @@
 /*--------------------iMPORTS DE LAS FUENTES--------------------*/
 
 /*Fuente Roboto*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/*Montserrate*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-/*Fuente Montserrat*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@314&family=Mukta+Vaani:wght@300;400;500;600;700;800&display=swap");
 /*--------------------iMPORTS DE LAS FUENTES--------------------*/
 
 /*--------------------NAVBAR--------------------*/
@@ -731,107 +725,122 @@ line-height: normal;
 
 
 
-                      /*Completa Datos Page*/
-.completaDatosGeneralContainer{ /*Esto centra los elemtentos en general*/
+/*Completa datos Page*/
+.bodyCompletarDatosPage{
+  background-color: #FFF !important;
+}
+
+.completaDatosGeneralContainer {
+  /*Esto centra los elemtentos en general*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFF;
   flex-direction: column;
   margin-top: 50px;
-}
-.tittileContainer{
+  }
+  .tittileContainer {
   display: flex;
   width: 513px;
   padding-left: 15px;
   margin-bottom: 40px;
-}
-#CompletaDatostittle{
+  }
+  #CompletaDatostittle {
   padding-left: -50rem;
-}
-
-.buttonSaveContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 168px;
-  height: 56px;
-  padding: var(--Multiples-8, 8px);
-  justify-content: center;
-  align-items: center;
-  gap: var(--Multiples-8, 8px);
-  margin-left: 175px;
-}
-.form{
-  display: flex;
-  flex-direction: column;
-}
-
-.experienceLevelContainer{
-  margin-top: 10px;
-}
-
-.redText{ /*Textos en rojo*/
-  color: red;
-}
-
-/*Esto hace la transicion en los placeholders*/
-#nameInput::placeholder, #emailInput::placeholder, #phoneInput::placeholder,#directionInput::placeholder,#levelInput::placeholder{
-  color: #888;
-  transition: opacity 0.2s ease;
-  padding-left: 5px; /*Esto hace que el placeholder no se pegue a la izquierda del input*/
-}
-#nameInput:focus::placeholder,#emailInput:focus::placeholder,#phoneInput:focus::placeholder,#directionInput:focus::placeholder,#levelInput:focus::placeholder{
-  opacity: 0; /* El placeholder desaparece al hacer clic */
+  }
   
-}
-/*Esto hace la transicion en los placeholders*/
-#nameInput,#emailInput,#phoneInput,#directionInput,#levelInput{
-
-  border-radius: var(--font-size-size-xs, 12px);
-  border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
-  width: 513px;
-  height: 56px;
-}
-
-
-.nameField,.emailFieldLabel,.LevelSellerFieldLabel,.directionFieldLabel,.phoneFieldLabel{
-  padding-bottom: 10px;
-  padding-top: 10px;
+  .buttonSaveContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 56px;
+    padding: var(--Multiples-8, 8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Multiples-8, 8px);
+    margin-left: 175px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
   
-}
-
-
-
-#profilePhoto{
-  width: 150px;
-height: 150px;
-flex-shrink: 0;
-  border-radius: 75px;
-}
-
-#saveButton{
-  color: var(--Blanco, #FFF);
-  display: flex;
-  width: 168px;
-  height: 56px;
-  padding: var(--Multiples-8, 8px);
-  justify-content: center;
-  align-items: center;
-  gap: var(--Multiples-8, 8px);
-  border-radius: 6px;
-  border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
-  background: var(--Verde, #92B869);
-  cursor: pointer;
-}
-
-.checkBoxesContainer{
-  border-radius: var(--font-size-size-xs, 12px);
-  border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
-  background: var(--Blanco, #FFF);;
-}
-
-.containerCheckBoxes{
-  margin: 10px;
-}
-
+  .experienceLevelContainer {
+    margin-top: 10px;
+  }
+  
+  .redText {
+    /*Textos en rojo*/
+    color: red;
+  }
+  
+  /*Esto hace la transicion en los placeholders*/
+  #nameInput::placeholder,
+  #emailInput::placeholder,
+  #phoneInput::placeholder,
+  #directionInput::placeholder,
+  #levelInput::placeholder {
+    color: #888;
+    transition: opacity 0.2s ease;
+    padding-left: 5px; /*Esto hace que el placeholder no se pegue a la izquierda del input*/
+  }
+  #nameInput:focus::placeholder,
+  #emailInput:focus::placeholder,
+  #phoneInput:focus::placeholder,
+  #directionInput:focus::placeholder,
+  #levelInput:focus::placeholder {
+    opacity: 0; /* El placeholder desaparece al hacer clic */
+  }
+  /*Esto hace la transicion en los placeholders*/
+  #nameInput,
+  #emailInput,
+  #phoneInput,
+  #directionInput,
+  #levelInput {
+    border-radius: var(--font-size-size-xs, 12px);
+    border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    width: 513px;
+    height: 56px;
+  }
+  
+  .nameField,
+  .emailFieldLabel,
+  .LevelSellerFieldLabel,
+  .directionFieldLabel,
+  .phoneFieldLabel {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  #profilePhoto {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 75px;
+  }
+  
+  #saveButton {
+    color: var(--Blanco, #fff);
+    display: flex;
+    width: 168px;
+    height: 56px;
+    padding: var(--Multiples-8, 8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Multiples-8, 8px);
+    border-radius: 6px;
+    border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background: var(--Verde, #92b869);
+    cursor: pointer;
+  }
+  
+  .checkBoxesContainer {
+    border-radius: var(--font-size-size-xs, 12px);
+    border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background: var(--Blanco, #fff);
+  }
+  
+  .containerCheckBoxes {
+    margin: 10px;
+  }
+  
