@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    
+    <main>
+        
+        <div class="completaDatosGeneralContainer">
+            <div class="tittleContainer">
+                <h1 id="CompletaDatostittle">Completa tus Datos</h1>
+            </div>
+            <div class="profilePhotoContainer">
+                <img src="/img/completaDatosImg/profilePhoto.jpg" alt="" id="profilePhoto">
+            </div>
+            <div class="userFormGeneralContainer">
+                <div class="formContainer">
+
+                    <form action="" class="form">
+                        
+                        <label for="" class="nameFieldLabel">Nombre Completo</label>
+                        <input type="text" id="nameInput" placeholder="Juan Camilo">
+                        
+                        <label for="" class="emailFieldLabel">Correo Electrónico</label>
+                        <input type="email" id="emailInput" placeholder="juan@gmail.com">
+            
+                        <label for="" class="phoneFieldLabel">Teléfono</label>
+                        <input type="email" id="phoneInput" placeholder="Numero de Teléfono">
+                        <h6 class="redText">Telefono no valido</h6>
+
+                        <label for="" class="directionFieldLabel">Direccion</label>
+                        <input type="email" id="directionInput" placeholder="Dirección">
+                        <h6 class="redText">Direccion incompleta</h6>
+                        
+                        <label for="nivel" class="LevelSellerFieldLabel">Nivel de Vendedor</label>
+                        <select id="levelInput" name="nivel">
+                            <option value="">Selecciona una opción</option>
+                            <option value="1">Novato</option>
+                            <option value="2">Intermedio</option>
+                            <option value="3">Experto</option>
+                            <option value="4">No Aplica</option>
+                        </select>
+
+                    </form>
+                </div>
+
+                <div class="experienceLevelContainer">
+                    <div class="checkBoxesContainer">
+                        <div class="containerCheckBoxes">
+                            <div class="novatoCheckBox">
+                                <input type="checkbox" id="novatoCheck">
+                                <label for="novatoCheck">Novato</label>
+                            </div>
+                            <div class="intermedioCheckBox">
+                                <input type="checkbox" id="intermedioCheck">
+                                <label for="intermedioCheck">intermedio</label>
+                            </div>
+                            <div class="expertoCheckBox">
+                                <input type="checkbox">
+                                <label for="expertoCheck">Experto</label>
+                            </div>
+                            <div class="noAplicaCheckBox">
+                                <input type="checkbox">
+                                <label for="noAplicaCheck">No Aplica</label>                
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="buttonSaveContainer">
+                    <button id="saveButton">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
