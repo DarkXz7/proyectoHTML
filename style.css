@@ -88,6 +88,7 @@ align-items: center;
   padding-top: 5px;
   color: var(--blanco-marfil-80, #7E7D7C);
 font-family: var(--font-family-labels, Roboto);
+
 font-size: var(--font-size-size-xs, 12px);
 font-style: normal;
 font-weight: 500;
@@ -122,6 +123,8 @@ gap: var(--font-size-size-lg, 24px);
   font-size: 16px;
   border: none; /* Eliminar bordes */
   cursor: pointer; /* Cambiar cursor al pasar por el botón */
+  font-family: var(--font-family-title, Montserrat);
+  
   
 }
 #iniciarSesionButton,#CrearCuentaButton:hover{
@@ -645,7 +648,8 @@ height: 43px;
 border: 0.5px solid var(--azul-70, #070C1C);
 background: var(--verde-10, #DBE7CD);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: var(--font-family-labels, Roboto);
 }
 
   
@@ -672,6 +676,13 @@ filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.1));
 
 #suscribetetexto{
   filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.2));
+  color: var(--Negro, #000);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: var(--font-family-labels, Roboto);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .input-con-icono img {
