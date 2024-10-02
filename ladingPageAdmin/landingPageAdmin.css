@@ -1,0 +1,399 @@
+/*iMPORTS DE LAS FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*iMPORTS DE LAS FUENTES*/
+
+
+/*--------------------NAVBAR--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  }
+
+body {
+  background-color: hsl(39, 35%, 85%) !important;
+  }
+
+.navBarContainerGeneral,.navBarBotonesIzquierdaContainer,.navbarIniciarCrearCuentaContainer,.navbarLogosContainer,.NavbarItems,.categorias{
+  display: flex;
+  }
+
+.navBarTittleContainer{
+  display: flex;
+  margin-left: -200px;
+  }
+
+.navBarBotonesIzquierdaContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.inicioButtonContainer,.catalogoButtonContainer,.catalogoButtonContainer,.navbarSearchBarContainer,.iniciarSesionButtonContainer,.CrearCuentaButtonContainer,.navbarLogosContainer,.categoriasButtonContainer{
+  margin-left: 26px;
+  }
+
+.navbarSearchBarContainer{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  }
+  
+.inicioButton,.catalogoButton,.catalogoButton{
+  background-color: transparent; /* Fondo transparente */
+  border: none !important ; /* Sin borde */
+  outline: none; /* Elimina el contorno de enfoque */
+  border: 1px solid var(--verde-40);
+  background: var(--verde-40);
+  }
+
+nav{
+  margin-top: 24px;
+  }
+  
+  #textInicioCategoriasCatalogoFuente{
+  color: var(--Negro, #000);
+  text-align: center;
+  font-family: Roboto;
+  font-size: var(--font-size-size-xs, 12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  }
+
+#merkachecheresTittle{
+  text-transform: uppercase; /*Esto hace que el titulo principal este en mayusculas*/
+  color: var(--Negro, #0E0D0D);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.64px;
+  filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+  }
+
+.navbarSearchBar{
+  display: flex;
+  width: 411px;
+  height: 40px;
+  padding: 14px var(--font-size-size-md, 20px);
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 2px;
+  background: var(--Blanco, #FFF);
+  align-items: center;
+  }
+  
+#navbarText{
+  color: var(--blanco-marfil-80, #7E7D7C);
+  font-family: var(--font-family-labels, Roboto);
+  font-size: var(--font-size-size-xs, 12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  }
+.navbarSearchBarContainer{
+  filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+  }
+  
+  /*Botones derecha NavBar*/
+.navbarIniciarCrearCuentaContainer{/*Contiene los dos botones*/ 
+  height: 54px;
+  padding: 0px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--font-size-size-lg, 24px);
+  }
+
+  /*Contenedores por separado de cada boton*/ 
+
+.iniciarSesionButtonContainer,.CrearCuentaButtonContainer{
+  border: 1px solid var(--verde-40, #A4C482);
+  background: var(--verde-40, #A4C482);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+#iniciarSesionButton,#CrearCuentaButton{
+  background: var(--verde-40, #A4C482);
+  border: none;
+  padding: 5px 15px; /* Tamaño del botón */
+  font-size: 16px;
+  border: none; /* Eliminar bordes */
+  cursor: pointer; /* Cambiar cursor al pasar por el botón */
+  font-family: var(--font-family-title, Montserrat);
+  color: var(--Negro, #000);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: 500;
+  }
+
+  #iniciarSesionButton,#CrearCuentaButton:hover{
+  background: #92B869;
+  }
+
+.navbarLogosContainer{
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--font-size-size-md, 20px);
+  flex-shrink: 0;
+  }
+  
+.navBarContainerGeneral{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  }
+
+nav{
+  margin-left: 250px;
+  display: flex;
+  height: 108px;
+  padding: var(--font-size-size-md, 20px) 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  flex-shrink: 0;
+  align-self: stretch;
+  }
+
+/*--------------------NAVBAR--------------------*/
+
+
+
+
+
+
+/*---------------------HEADER-------------------*/
+
+.estadisticasContainer{ /*Esto hace que cada contenedor de estadisticas este separado por espacio y centrado*/
+  width: 1179px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  place-items: center;
+  margin:auto;
+}
+
+.checkDownContainer{ /*Esto hace que cada contenedor de texto verde y su checkIcon este separado por espacio y centrado*/
+  display: flex;
+  gap: 5px;
+}
+
+.estadistica1Container,.estadistica2Container,.estadistica3Container,.estadistica4Container{ /*Esto es el tamaño de cada contenedor de estadisticas*/
+  width: 208px;
+  height: 70px;
+  
+}
+
+.estadisticasContainer{ /*Esto hace que cada estadistica se vea en horizontal aplicando FLEX al contenedor padre*/
+  display: grid;
+gap: 225px;
+  display: flex;
+  
+}
+
+.estadistica1Container,.estadistica2Container,.estadistica3Container,.estadistica4Container{ /*Esto hace que los bordes de cada estadistica se vean iguales*/
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: var(--font-size-size-xs, 12px);
+  border: 0.8px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+  background: var(--beige, #E7DECD);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+#imgEstadistica{ /*Controla las dimensiones de las imagenes*/
+  border-radius: 6px; /*Esto hace que cada imagen tenga un borde redondo*/
+  width: 78px;
+  height: 50px;
+}
+
+.textoEstadisticaContainer1{ /*Esto hace que el texto de la estadistica se vea en columna de arriba a abajo*/
+  flex-direction: column;
+}
+
+#greeenText{ /*Estilos del texto de la estadistica de verde*/
+  color: var(--Verde, #92B869);
+  font-family: var(--font-family-labels, Roboto);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#tittleStadistics{ /*Estilos del titulo de la estadistica de azul*/
+  color: var(--azul-30, #5C6171);
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/*ASIDE IZQUIERDA*/
+
+
+
+
+.adminPhotoGeneralContainer{ /*Esto hace que el adminPhoto se centre y tenga bordes redondos*/
+  display: flex;
+  border-radius: 6px;
+  border: 0.8px solid var(--blanco-marfil-80, #7E7D7C);
+  background: var(--Verde, #92B869);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 104px;
+  padding: 10px;
+}
+aside{ /*Esto hace qu el aside ocupe toda la parte izquierda de la pagina*/
+  display: flex;
+  width: 260px;
+  height: 593px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--font-size-size-lg, 24px);
+  flex-shrink: 0;
+  
+
+}
+
+.adminNameContainer{ /*Esto hace que el contenedor del nombre del admin tenga medidas*/
+display: flex;
+ justify-content: center; /* Centra horizontalmente */
+align-items: center;
+
+  
+  
+}
+#adminTittle{ /*Esto hace que el titulo del admin sea de tamaño normal y tenga estilos*/
+  color: var(--Negro, #000);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: var(--font-family-title, Montserrat);
+  font-size: var(--Multiples-16, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+}
+.adminPhotoContainer{
+  margin-left: 20px;
+  
+}
+
+
+/*botones de la parte izquierda ASIDE*/
+
+#dashboardAsideButton{ /*El boton de dashboard*/
+display: flex; /*Esto sirve para alinear*/
+padding: var(--Multiples-8, 8px);
+justify-content: center;
+align-items: center;
+gap: var(--Multiples-8, 8px);
+align-self: stretch;
+
+border-radius: 6px; /*Estilos*/
+border: 1px solid var(--Verde, #92B869);
+background: var(--Verde, #92B869);
+
+color: var(--Negro, #000); /*Colores y Fuente*/
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: var(--font-family-labels, Roboto);
+font-size: var(--font-size-size-xs, 12px);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+width: 240px; /*Medidas*/
+}
+
+#usersAsideButton{
+display: flex; /*Esto sirve para alinear*/
+padding: var(--Multiples-8, 8px);
+justify-content: center;
+align-items: center;
+gap: var(--Multiples-8, 8px);
+align-self: stretch;
+
+border-radius: 6px; /*Estilos*/
+border: 1px solid var(--Verde, #92B869);
+
+color: var(--Negro, #000); /*Colores y Fuente*/
+font-family: var(--font-family-labels, Roboto);
+font-size: var(--font-size-size-xs, 12px);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+width: 240px; /*Medidas*/
+}
+
+.adminButtonsContainer{
+  display: grid; /*Esto separa los botones entre sí*/
+  gap: 25px;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+}
+
+
+
+/*********ASIDE DERECHA***********/
+.asideRight{
+  float: right;
+  
+}
+.asideRightGeneralContainer{
+  
+
+}
+#asideRightGraph{
+  width: 182px;
+  height: 204px;
+}
+
+.asideRightGeneralContainer{
+  margin-bottom: 900px;
+  border-radius: 10px;
+background: var(--Blanco, #FFF);
+filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+}
+
+.asideRight{
+  
+  display: flex;
+  flex-direction: column;
+height: 479px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+
+}
+.asideRightTitlleContainer{
+  width: 149px;
+  margin: 20px;
+  margin-left: 19px;
+}
+#asideRightTittle{
+  color: var(--azul-40, #333A4E);
+font-family: var(--font-family-labels, Roboto);
+font-size: var(--font-size-size-sm, 16px);
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}
