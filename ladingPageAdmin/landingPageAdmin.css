@@ -351,49 +351,37 @@ width: 240px; /*Medidas*/
 
 
 
-/*********ASIDE DERECHA***********/
-.asideRight{
-  float: right;
-  
-}
-.asideRightGeneralContainer{
-  
-
-}
-#asideRightGraph{
-  width: 182px;
-  height: 204px;
-}
-
-.asideRightGeneralContainer{
-  margin-bottom: 900px;
-  border-radius: 10px;
-background: var(--Blanco, #FFF);
-filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
-}
-
-.asideRight{
-  
+.graficasContainer{
   display: flex;
-  flex-direction: column;
-height: 479px;
-padding: 10px;
-justify-content: center;
+justify-content: center; /* Centra horizontalmente */
 align-items: center;
-gap: 10px;
-flex-shrink: 0;
+/*Si se necesia centrar el div de otra forma o si tiene justify-content:space-between, usar place items*/
+place-items: center;
+width: 961px;
+margin-left: 500px;
+flex-direction: column;
 
 }
-.asideRightTitlleContainer{
-  width: 149px;
-  margin: 20px;
-  margin-left: 19px;
+
+
+.usersGraphContainer{
+  display: flex;
 }
-#asideRightTittle{
-  color: var(--azul-40, #333A4E);
-font-family: var(--font-family-labels, Roboto);
-font-size: var(--font-size-size-sm, 16px);
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 150% */
+
+.graphTittleContainer{
+  display: flex;
+}
+
+.ultimos12HorasContainer{
+  margin-left: 1100px;
+}
+.text1GraphContainer, .text2GraphContainer,.text3GraphContainer{
+display: inline-flex;
+padding-right: 65px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.text3GraphContainer{
+  margin-left: 1000px;
 }
