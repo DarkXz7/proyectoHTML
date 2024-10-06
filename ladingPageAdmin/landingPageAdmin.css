@@ -24,13 +24,16 @@ body {
 
 .navBarTittleContainer{
   display: flex;
-  margin-left: -200px;
+  margin-left: -450px;
+  white-space: nowrap;
   }
 
 .navBarBotonesIzquierdaContainer{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: -160px;
   }
 
 .inicioButtonContainer,.catalogoButtonContainer,.catalogoButtonContainer,.navbarSearchBarContainer,.iniciarSesionButtonContainer,.CrearCuentaButtonContainer,.navbarLogosContainer,.categoriasButtonContainer{
@@ -41,6 +44,8 @@ body {
   display: flex;
   justify-items: center;
   align-items: center;
+  position: relative;
+  left: -90px;
   }
   
 .inicioButton,.catalogoButton,.catalogoButton{
@@ -79,7 +84,7 @@ nav{
 
 .navbarSearchBar{
   display: flex;
-  width: 411px;
+  width: 700px;
   height: 40px;
   padding: 14px var(--font-size-size-md, 20px);
   justify-content: space-between;
@@ -102,22 +107,12 @@ nav{
   }
   
   /*Botones derecha NavBar*/
-.navbarIniciarCrearCuentaContainer{/*Contiene los dos botones*/ 
-  height: 54px;
-  padding: 0px 5px;
-  justify-content: center;
-  align-items: center;
-  gap: var(--font-size-size-lg, 24px);
-  }
+
 
   /*Contenedores por separado de cada boton*/ 
 
-.iniciarSesionButtonContainer,.CrearCuentaButtonContainer{
-  border: 1px solid var(--verde-40, #A4C482);
-  background: var(--verde-40, #A4C482);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  
+
+
 #iniciarSesionButton,#CrearCuentaButton{
   background: var(--verde-40, #A4C482);
   border: none;
@@ -146,12 +141,16 @@ nav{
   align-items: center;
   gap: var(--font-size-size-md, 20px);
   flex-shrink: 0;
+  position: relative;
+  left: 150px;
+  
   }
   
 .navBarContainerGeneral{
   justify-content: center;
   align-items: center;
   display: flex;
+  gap: 250px;
   }
 
 nav{
@@ -200,9 +199,25 @@ nav{
 
 .estadisticasContainer{ /*Esto hace que cada estadistica se vea en horizontal aplicando FLEX al contenedor padre*/
   display: grid;
-  gap: 200px;
+  gap: 210px;
   display: flex;
   
+}
+.estadistica1Container{
+  position: relative;
+  left: -70px;
+}
+.estadistica2Container{
+  position: relative;
+  left: -35px;
+}
+.estadistica3Container{
+  position: relative;
+  left: 20px;
+}
+.estadistica4Container{
+  position: relative;
+  left: 24px;
 }
 
 .estadistica1Container,.estadistica2Container,.estadistica3Container,.estadistica4Container{ /*Esto hace que los bordes de cada estadistica se vean iguales*/
@@ -367,7 +382,7 @@ width: 240px; /*Medidas*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
-  left: 910px;
+  left: 950px;
   top: 525px;
   background-color: #fff; /* Fondo blanco para diferenciar */
   padding: 20px;
@@ -485,12 +500,12 @@ line-height: 20px; /* 166.667% */
 .container {
   display: flex;
   justify-content: flex-end; /* Alinea el contenido a la derecha */
-  height: 50vh;
+  height: 370px;
   padding: 20px;
   position: relative;
   top: -500px;
-  left: -80px;
-  
+  left: -20px;
+
 }
 
 /* Caja de ventas */
@@ -520,11 +535,20 @@ line-height: 20px; /* 166.667% */
 }
 
 .bar-graph {
-  width: 100%;
+  width: 7.429px;
+height: 96.742px;
+flex-shrink: 0;
+  
   background-color: #8bc34a;
   border-radius: 5px;
 }
-
+.chart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  margin-top: 75px;
+}
 .bar-label {
   margin-bottom: 5px;
   background-color: #8bc34a;
@@ -533,10 +557,15 @@ line-height: 20px; /* 166.667% */
   border-radius: 5px;
   font-size: 12px;
 }
+
+
 .titleRightAsideContainer{
   margin-left: -20px;
   width: 149px;
 }
+
+
+
 #tittleRightAsideText{
   color: var(--azul-40, #333A4E);
 font-family: var(--font-family-labels, Roboto);
