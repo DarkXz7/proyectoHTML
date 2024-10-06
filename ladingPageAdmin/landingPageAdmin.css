@@ -175,13 +175,16 @@ nav{
 
 /*---------------------HEADER-------------------*/
 
+
+
 .estadisticasContainer{ /*Esto hace que cada contenedor de estadisticas este separado por espacio y centrado*/
   width: 1179px;
   padding: 10px;
-  justify-content: space-between;
+  
   align-items: center;
   place-items: center;
   margin:auto;
+  
 }
 
 .checkDownContainer{ /*Esto hace que cada contenedor de texto verde y su checkIcon este separado por espacio y centrado*/
@@ -197,7 +200,7 @@ nav{
 
 .estadisticasContainer{ /*Esto hace que cada estadistica se vea en horizontal aplicando FLEX al contenedor padre*/
   display: grid;
-gap: 225px;
+  gap: 200px;
   display: flex;
   
 }
@@ -319,6 +322,7 @@ line-height: normal;
 width: 240px; /*Medidas*/
 }
 
+
 #usersAsideButton{
 display: flex; /*Esto sirve para alinear*/
 padding: var(--Multiples-8, 8px);
@@ -352,31 +356,36 @@ width: 240px; /*Medidas*/
 
 
 /* Asegúrate de que el contenedor ocupe todo el ancho y alto disponibles */
-.main-content { /*Esto centra el contenedor de la grafica en el centro de la página */
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%); /* Mueve el div al centro */
-}
+/*Esto centra el contenedor de la grafica en el centro de la página */
+/* Mueve el div al centro */
+
 
 /* Estilo para la sección central */
 .main-content {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  left: 910px;
+  top: 525px;
   background-color: #fff; /* Fondo blanco para diferenciar */
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar */
   margin-top: 25px;
-  width: 941px;
-height: 469px;
+  width: 1300px;
+height: 650px;
 }
 .center-section{
+  
   width: 1100px;
 height: 469px;
 }
 .usersGraphContainer{
   display: flex;
-  gap: 65px;
-  margin-top: 25px;
+  gap: 70px;
+  margin-top: 40px;
   
 }
 
@@ -386,6 +395,7 @@ height: 469px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -397,9 +407,10 @@ height: var(--font-size-size-xs, 12px);
 
 .rightDetailsContainer{ /*Esto acomoda los dos rectangles*/
   display: flex;
+  
   gap: 15px;
   margin-top: 30px;
-  margin-left: 400px;
+  margin-left:725px;
 }
 
 .righDetail1,.righDetail2{
@@ -413,12 +424,14 @@ height: var(--font-size-size-xs, 12px);
 .text2GraphContainer{
   margin-left: 80px;
 }
-.tittleContainer{
+.tittleContainer{ /*Esto mueve el titulo de la grafica de usuarios nuevos*/
   width: fit-content;
-  margin-left: -190px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -900px;
 }
 #imgGraph{
-  width: 900px;
+  width: 1250px;
 }
 .mounth21Center{ /*Esto centra los iconos de agosto y julio 21 con sus respectivos rectangles */
   display: flex;
@@ -426,9 +439,15 @@ height: var(--font-size-size-xs, 12px);
   justify-content: center;
   align-items: center;
   place-content: center;
+  margin-top: -15px;
 }
+.ultimas12HorasContainer{
+  display: flex;
+  margin-left: 650px;
 
-#ultimas12HorasContainer{
+}
+#tittle12Horas{
+  white-space: nowrap;
   color: var(--blanco-marfil-90, #545353);
 text-align: right;
 font-family: var(--font-family-labels, Roboto);
@@ -438,5 +457,91 @@ font-weight: 400;
 line-height: 20px; /* 166.667% */
 }
 
+.imgContainer{ /*ESTO MUEVE EL IMG DE LAS GRAFICAS*/
+  margin-left: 10px;
+  margin-top:45px;
+}
+
+.numberContainer{
+  margin-top: 5px;
+
+}
+.vectorContainer{
+  margin-top: 25px;
+  margin-left: 600px;
+  gap: 5px;
+  align-items: center;
+  display: flex;
+}
+#vectorIMG{
+  opacity: 200%;
+  width: 12px;
+  height: 6px;
+}
 
 
+
+/* El contenedor principal */
+.container {
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  height: 50vh;
+  padding: 20px;
+  position: relative;
+  top: -500px;
+  left: -80px;
+  
+}
+
+/* Caja de ventas */
+.sales-box {
+  background-color: #fff;
+  padding: 20px;
+  width: 210px;  /* Ancho personalizado */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center;
+}
+
+/* Estilo para las barras del gráfico */
+.chart {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las barras */
+  align-items: flex-end;          /* Alinea las barras en la parte inferior */
+  height: 150px;                  /* Altura del gráfico */
+  margin-top: 10px;
+}
+
+.bar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-graph {
+  width: 100%;
+  background-color: #8bc34a;
+  border-radius: 5px;
+}
+
+.bar-label {
+  margin-bottom: 5px;
+  background-color: #8bc34a;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.titleRightAsideContainer{
+  margin-left: -20px;
+  width: 149px;
+}
+#tittleRightAsideText{
+  color: var(--azul-40, #333A4E);
+font-family: var(--font-family-labels, Roboto);
+font-size: var(--font-size-size-sm, 16px);
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}
