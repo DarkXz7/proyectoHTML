@@ -351,37 +351,92 @@ width: 240px; /*Medidas*/
 
 
 
-.graficasContainer{
-  display: flex;
-justify-content: center; /* Centra horizontalmente */
-align-items: center;
-/*Si se necesia centrar el div de otra forma o si tiene justify-content:space-between, usar place items*/
-place-items: center;
-width: 961px;
-margin-left: 500px;
-flex-direction: column;
-
+/* Asegúrate de que el contenedor ocupe todo el ancho y alto disponibles */
+.main-content { /*Esto centra el contenedor de la grafica en el centro de la página */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); /* Mueve el div al centro */
 }
 
-
+/* Estilo para la sección central */
+.main-content {
+  background-color: #fff; /* Fondo blanco para diferenciar */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar */
+  margin-top: 25px;
+  width: 941px;
+height: 469px;
+}
+.center-section{
+  width: 1100px;
+height: 469px;
+}
 .usersGraphContainer{
   display: flex;
+  gap: 65px;
+  margin-top: 25px;
+  
 }
+
 
 .graphTittleContainer{
+  gap: 600px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.ultimos12HorasContainer{
-  margin-left: 1100px;
+
+#rectangleIMG{
+  width: var(--font-size-size-xs, 12px);
+height: var(--font-size-size-xs, 12px);
 }
-.text1GraphContainer, .text2GraphContainer,.text3GraphContainer{
-display: inline-flex;
-padding-right: 65px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
+
+
+.rightDetailsContainer{ /*Esto acomoda los dos rectangles*/
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  margin-left: 400px;
 }
-.text3GraphContainer{
-  margin-left: 1000px;
+
+.righDetail1,.righDetail2{
+  display: flex;
+  margin-top: -25px;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
 }
+
+.text2GraphContainer{
+  margin-left: 80px;
+}
+.tittleContainer{
+  width: fit-content;
+  margin-left: -190px;
+}
+#imgGraph{
+  width: 900px;
+}
+.mounth21Center{ /*Esto centra los iconos de agosto y julio 21 con sus respectivos rectangles */
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+}
+
+#ultimas12HorasContainer{
+  color: var(--blanco-marfil-90, #545353);
+text-align: right;
+font-family: var(--font-family-labels, Roboto);
+font-size: var(--font-size-size-xs, 12px);
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 166.667% */
+}
+
+
+
