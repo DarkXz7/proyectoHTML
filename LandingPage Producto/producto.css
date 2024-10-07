@@ -234,7 +234,8 @@ nav {
     display: flex;
     margin-top: 50px;
     position: relative;
-    left: 100px;
+    left: 50px;
+    
     
 }
 .ImgContainerGrande{ /*Esto maneja el contenedor de la imagen grande de la derecha*/
@@ -245,9 +246,335 @@ nav {
 }
 
 .detailsProductContainerGeneral{
-    background-color:red; /*Esto ayuda a diferenciar el contenedor de los detalles dle producto*/
+    width: 850px;
+    height: 650px;
+    /*Esto ayuda a diferenciar el contenedor de los detalles dle producto*/
 }
 .tittleProductContainer{ /*Esto alinea el titulo del producto con el icono del corazon*/
     display: flex;
     gap: 150px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+
+#tittleText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-title, Montserrat);
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.starsDetailsProductContainer{ /*Esto alinea las estrellas y la calificacion del producto*/
+    display: flex;  
+    position: relative;
+    top: 32px;
+    left: 34px;
+    gap: 16px;
+}
+.ratingContainer{
+    position: relative;
+    top: 2.5px;
+}
+.priceContainer{ /*Esto alinea el precio y precio con descuento*/
+    display: flex;
+    gap: 15px;
+} 
+.precioContainerValorContainer{
+    position: relative;
+    top: 10px;
+
+    color: var(--Negro, #000000);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+} 
+
+/*Esto se encarga de la parte del precio y precio de decuento*/
+#descuentoText{
+    color: var(--Verde, #92B869);
+font-family: var(--font-family-labels, Roboto);
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: strikethrough;
+    text-decoration: line-through;
+}
+
+#descuentoText40{
+color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.descuentoContainer{
+    position: relative;
+    top: 10px;
+}
+
+/*Esto se encarga de la parte del precio y precio de decuento*/
+.priceContainerGeneral{
+    position: relative;
+    top: 35px;
+    left: 38px;
+}
+.decuentoContainerPorcentaje{ /*Contenedor del decuento con porcentaje ($40%)*/
+margin-top: 12px;
+padding: 6px 14px;
+justify-content: center;
+align-items: center;
+gap: var(--font-size-size-xs, 12px);
+border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background: var(--verde-30, #B6D09B);
+}
+
+
+/*Description*/
+.descriptionProductContainer{
+    width: 590px;
+    position: relative;
+    top: 53px;
+    left: 33px;
+}
+.linea1{
+    position: relative;
+}
+.linea3{
+    width: 833px !important;
+}
+.linea2{
+    width: 822px !important;
+}
+.linea1,.linea2,.linea3{
+    width: 815px;
+    border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
+  margin: 20px 0; /* Mayor separación vertical entre la línea y el contenido */
+}
+#descriptionText{
+    color: var(--Negro, #000);
+
+font-family: var(--font-family-description, "Mukta Vaani");
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+}
+
+
+/*color*/
+.colorContainerGeneral{
+    position: relative;
+    top: 55px;
+    left: 27px;
+}
+.colorContainer2{
+display: flex;
+gap: 10px;
+
+}
+.colorContainer{
+border-radius: 10px;
+background: var(--blanco-marfil-40, #FCFBF9);
+width: 158px;
+height: 82px;
+padding: 5px;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+flex-shrink: 0;
+}
+
+
+.checkColorContainer{ /*Esto alinea el contenedor del check de los coloress*/
+    position: absolute;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+}
+
+
+/*Tamaños*/
+.tamanoContainer{ /*Esto alinea los contenedores de los tamaños*/
+display: inline-flex;
+align-items: flex-start;
+gap: var(--font-size-size-xs, 12px);
+margin-left: 10px;
+position: relative;
+top: 5px;
+}
+.Container1,.Container2,.Container4{
+padding: var(--font-size-size-xs, 12px) var(--font-size-size-lg, 24px);
+justify-content: center;
+align-items: center;
+gap: var(--font-size-size-xs, 12px);
+    border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background-color: rgb(218, 208, 187);
+}
+.Container3{
+padding: var(--font-size-size-xs, 12px) var(--font-size-size-lg, 24px);
+justify-content: center;
+align-items: center;
+gap: var(--font-size-size-xs, 12px);
+    border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background: var(--Verde, #92B869);
+}
+.tamanoTittleContainer{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tamanoContainerGeneral{
+    display: grid;
+    gap: 10px;
+    position: relative;
+    top: 39px;
+    left: 16px;
+}
+
+
+#tamanoText3{
+    color: var(--Blanco, #fff);
+    font-family: var(--font-family-labels, Roboto);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#tamanoText1,#tamanoText2,#tamanoText4{
+
+    color: var(--Blanco, #000);
+    font-family: var(--font-family-labels, Roboto);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#tamanoTittle{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+/*Cantidad, boton comprar y carrito*/
+.buttonycantidadContainerGeneral,.cantidadObjetosContainer{
+    display: flex;
+}
+.cantidadContainerGeneral{
+    border-radius: 62px;
+    border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background-color: rgb(218, 208, 187);
+
+}
+
+.buttonycantidadContainerGeneral{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    gap: 25px;
+}
+
+.cantidadContainer{
+    display: flex;
+width: 170px;
+height: 52px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+
+}
+
+.cantidadObjetosContainer{
+gap: 35px;
+
+}
+
+
+.cantidadNumberContainer{
+    position: relative;
+    top: 3px;
+    
+
+}
+#cantidadText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/*Boton comprar*/
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ButtonContainerGeneral{
+
+    white-space: nowrap;
+    width: 240px;
+    height: 52px;
+    padding: 16px 54px;
+    
+    gap: var(--font-size-size-xs, 12px);
+    flex-shrink: 0;
+    border-radius: 62px;
+    border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background: var(--Verde, #92B869);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+}
+#comprarText{
+    color: var(--Blanco, #FFF);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+/*Carrito boton*/
+.carritoContainerGeneral{
+align-items: center;
+justify-items: center;
+
+white-space: nowrap;
+display: flex;
+width: 200px;
+height: 52px;
+padding: 10px;
+border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background: var(--verde-30, #B6D09B);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.carritoContainer{
+    position: relative;
+left: 27px;
+    
+}
+#carritoText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
