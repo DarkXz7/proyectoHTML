@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap");
+
+/*--------------------NAVBAR--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: hsl(39, 35%, 85%) !important;
+}
+
+.navBarContainerGeneral,
+.navBarBotonesIzquierdaContainer,
+.navbarIniciarCrearCuentaContainer,
+.navbarLogosContainer,
+.NavbarItems,
+.categorias {
+    display: flex;
+}
+
+.navBarTittleContainer {
+    display: flex;
+    text-align: left;
+    position: relative;
+    left: -400px;
+    /* Asegura que esté pegado al borde izquierdo */
+}
+
+.navBarBotonesIzquierdaContainer {
+    /*Esto centra los botones de la navBar de inicio, categorias y catalogo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -300px;
+    gap: 25px;
+}
+
+.navbarSearchBarContainer {
+    /*Esto centa la SearchBar*/
+    position: relative;
+    left: -200px;
+}
+
+.inicioButtonContainer,
+.catalogoButtonContainer,
+.catalogoButtonContainer,
+.navbarSearchBarContainer,
+.iniciarSesionButtonContainer,
+.CrearCuentaButtonContainer,
+.navbarLogosContainer,
+.categoriasButtonContainer {
+    margin-left: 26px;
+}
+
+.categoriasButtonContainer {
+    display: flex;
+}
+
+.navbarSearchBarContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.inicioButton,
+.catalogoButton,
+.catalogoButton {
+    background-color: transparent;
+    /* Fondo transparente */
+    border: none !important;
+    /* Sin borde */
+    outline: none;
+    /* Elimina el contorno de enfoque */
+    border: 1px solid var(--verde-40);
+    background: var(--verde-40);
+}
+
+nav {
+    margin-top: 24px;
+}
+
+#textInicioCategoriasCatalogoFuente {
+    /*Fuente de los botones inicio, categorias y catalogo*/
+    color: var(--Negro, #000);
+    text-align: center;
+    font-family: var(--font-family-description, "Mukta Vaani");
+    font-size: var(--font-size-size-xs, 12px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 133.333% */
+    width: 74px;
+    height: 27px;
+}
+
+#merkachecheresTittle {
+    color: var(--Negro, #0e0d0d);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: -0.64px;
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+}
+
+.navbarSearchBar {
+    display: flex;
+    width: 500px;
+    height: 40px;
+    padding: 14px var(--font-size-size-md, 20px);
+    border-radius: 2px;
+    background: var(--Blanco, #fff);
+    align-items: center;
+}
+
+.navBarTextContainer {
+    display: flex;
+    margin-bottom: 4px;
+    position: relative;
+    left: -5px;
+}
+
+#navbarText {
+    padding-top: 5px;
+    color: var(--blanco-marfil-80, #7e7d7c);
+    font-family: var(--font-family-labels, Roboto);
+
+    font-size: var(--font-size-size-xs, 12px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.navbarSearchBarContainer {
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+}
+
+/*Editar perfil*/
+.editarPerfilContainer {
+    display: flex;
+    gap: 100px;
+    
+}
+
+
+/*Editar perfil icono configuracion*/
+#configImgDerechaIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.editarPerfilContainer {
+    gap: 5px;
+}
+
+/*Editar perfil Texto*/
+#editarPerfilText {
+    color: var(--Negro, #000);
+    font-family: Roboto;
+    font-size: var(--font-size-size-sm, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbarLogosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    flex-shrink: 0;
+    position: relative;
+    left: -50px;
+    gap: 40px;
+    
+}
+
+.navBarContainerGeneral {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav {
+    margin-left: 250px;
+    display: flex;
+    height: 108px;
+    padding: var(--font-size-size-md, 20px) 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+/*--------------------NAVBAR--------------------*/
+
+
+/*--------------------PRODUCTO--------------------*/
+
+
+#ImgColum{
+    width: 152px;
+    height: 167px;
+    flex-shrink: 0;
+}
+#ImgGrandeColum{ /*Esto usa la imagen de la derecha grande*/
+    width: 444px;
+    height: 530px;
+    border-radius: var(--font-size-size-md, 20px);
+    background: url(<path-to-image>) lightgray -12.816px -91.715px / 107.109% 134.609% no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ImgContainerColumn{ /*Esto centra el contenedor de las 3 imagenes de la izquierda*/
+    position: relative;
+    top: 5px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.imgMainGeneralContainer{ /*Esto maneja el contenedor general de todas las imagenes*/
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    left: 100px;
+    
+}
+.ImgContainerGrande{ /*Esto maneja el contenedor de la imagen grande de la derecha*/
+    margin-left: 15px;
+}
+.sectionMainGeneralContainer{
+    display: flex;
+}
+
+.detailsProductContainerGeneral{
+    background-color:red;
+}
+.tittleProductContainer{ /*Esto alinea el titulo del producto con el icono del corazon*/
+    display: flex;
+    gap: 150px;
+}
