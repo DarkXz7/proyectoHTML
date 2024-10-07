@@ -245,7 +245,7 @@ nav {
 }
 
 .detailsProductContainerGeneral{
-    background-color:red;
+    background-color:red; /*Esto ayuda a diferenciar el contenedor de los detalles dle producto*/
 }
 .tittleProductContainer{ /*Esto alinea el titulo del producto con el icono del corazon*/
     display: flex;
