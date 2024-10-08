@@ -218,9 +218,6 @@ nav {
 #ImgGrandeColum{ /*Esto usa la imagen de la derecha grande*/
     width: 444px;
     height: 530px;
-    border-radius: var(--font-size-size-md, 20px);
-    background: url(<path-to-image>) lightgray -12.816px -91.715px / 107.109% 134.609% no-repeat;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .ImgContainerColumn{ /*Esto centra el contenedor de las 3 imagenes de la izquierda*/
