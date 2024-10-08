@@ -782,3 +782,153 @@ font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 137.5% */
 }
+
+
+/*opiniones*/
+
+.todaslasresenasContainer,.tituloResenasContainer{
+    display: flex;
+}
+.tituloResenasContainer{
+    margin-left: 20px;
+    gap: 5px;
+    align-items: center;
+}
+
+.rightmenuContainerGeneral{
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+.settingsContainer{
+    display: flex;
+width: 48px;
+height: 48px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+border-radius: 62px;
+background: var(--blanco-marfil, #FBFAF8);
+}
+
+.filtroContainer{
+    display: flex;
+width: 120px;
+height: 48px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+border-radius: 62px;
+background: var(--blanco-marfil, #FBFAF8);
+}
+.todaslasresenasContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.opinionTituloContainer{
+    margin-left: 20px;
+}
+.linea5{
+    width: 1870px;
+    border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
+    margin: 0px 0; /* Mayor separación vertical entre la línea y el contenido */
+}
+.resenaContainer{
+    display: flex;
+width: 190px;
+height: 48px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+border-radius: 62px;
+background: var(--Verde, #92B869);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#allresenastext{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+#textresenas2{
+    color: var(--Gris, #666);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+}
+#latestText{
+    color: var(--Negro, #000);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#resenatext{
+    white-space: nowrap;
+    color: var(--Blanco, #FFF);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/*comentarios*/
+
+.comentariosContainer{
+    display: flex;
+    flex-direction: column;
+}
+.comentariosGeneralContainer{
+    display: flex;
+}
+.nameContainer{
+    margin-top: 20px;
+}
+.userTextContainer{
+    margin-top: 25px;
+
+}
+.dateContainer{
+    margin-top: 50  px;
+}
+.nameContainer{
+    display: flex;
+    gap: 10px;
+    
+}
+.hola{ /*Esto centro los contenedores de las reseñas*/
+    margin-top: 28px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 28px;
+}
+.userComentContainer{ /*tamaño de los contenedores*/
+    
+    height: 300px;
+    width: 800px;
+    border-radius: var(--font-size-size-md, 20px);
+border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+}
+#userText{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+}
+#dateText{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 137.5% */
+}
