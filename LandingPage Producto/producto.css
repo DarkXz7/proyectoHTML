@@ -355,7 +355,7 @@ background: var(--verde-30, #B6D09B);
 .linea1,.linea2,.linea3{
     width: 815px;
     border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
-  margin: 20px 0; /* Mayor separación vertical entre la línea y el contenido */
+    margin: 20px 0; /* Mayor separación vertical entre la línea y el contenido */
 }
 #descriptionText{
     color: var(--Negro, #000);
@@ -577,4 +577,171 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+}
+
+
+/*Productos del vendedor*/
+
+.titleVendedorContainer{ /*Esto controla la fuenta del titutlo principal*/
+    color: var(--Negro, #000);
+    font-family: var(--font-family-title, Montserrat);
+    font-size: var(--font-size-size-lg, 24px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 91.667% */
+    position: relative;
+    left: 70px;
+}
+.sellerContainerMayor{
+    height: 560px;
+}
+.sellerContainerGeneral{
+    height: 557px;
+}
+
+.productsContainerGeneral{ /*Esto pone los productos en horizontal*/
+    display: flex;
+    gap: 325px;
+}
+.estrellasContainer{
+    display: flex;
+}
+.precioContainer{
+    display: flex;
+    gap: 10px;
+}
+.descuentoContainer{
+    position: relative;
+    top: 0px;
+}
+
+.productsContainerGeneral{
+    position: relative;
+    top: 70px;
+    left: 80px;
+    
+}
+.productContainer1{
+    width: 361px;
+    height: 450px;
+    border-radius: 10px;
+    border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+}
+
+.descuentoContainer{
+    
+    display: flex;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--font-size-size-xs, 12px);
+    border-radius: 62px;
+background: var(--verde-30, #B6D09B);
+}
+.imgContainerProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contenedorGeneralproducto{
+    position: relative;
+    top: 30px;
+}
+.detallesContainer{
+    display: grid;
+    gap: 10px;
+    position: relative;
+    left: 35px;
+    top: 15px;
+}
+.estrellasContainer{
+    gap: 10px;
+}
+.estrellaTextoContainer{
+    position: relative;
+    bottom: -2px;
+}
+
+/*FUENTES*/
+#estrellaTexto{
+    color: var(--Negro, #000);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#tituloText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-title, Montserrat);
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+
+#hola{
+    color: var(--Negro, #000);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#precioVerdeText{
+text-decoration: line-through;
+color: var(--Verde, #92B869);
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: strikethrough;
+}
+#descuentoText{
+    color: var(--Negro, #000);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*Caracteristicas*/
+
+.caracteristicasDescripcionContainerGeneral{
+    margin-top: 50px;
+    
+    border: 1px solid rgba(78, 78, 78, 0.1);;
+}
+.caracteristicasContainerGeneral{
+    margin-left: 100px;
+}
+.caracteristicasSection{
+    margin-top: 100px;
+}
+.linea4{
+    width: 815px;
+    border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
+    margin: 0px 0; /* Mayor separación vertical entre la línea y el contenido */
+}
+/*Fuentes*/
+#tituloCaracteristicas{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}#caracteristicasTexto{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
 }
