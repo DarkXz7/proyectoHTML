@@ -712,10 +712,16 @@ text-decoration-line: strikethrough;
 }
 
 /*Caracteristicas*/
-
+.caracteristicasDescripcionContainer{
+    margin-left: 15px;
+    margin-bottom: 100px;
+    
+}
 .caracteristicasDescripcionContainerGeneral{
     margin-top: 50px;
-    
+    width: 1700px;
+    height: 189px;
+    border-radius: 10px;
     border: 1px solid rgba(78, 78, 78, 0.1);;
 }
 .caracteristicasContainerGeneral{
@@ -725,7 +731,7 @@ text-decoration-line: strikethrough;
     margin-top: 100px;
 }
 .linea4{
-    width: 815px;
+    width: 1700px;
     border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
     margin: 0px 0; /* Mayor separación vertical entre la línea y el contenido */
 }
