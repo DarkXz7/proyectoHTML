@@ -84,7 +84,7 @@ body {
 }
 
 nav {
-    margin-top: 24px;
+    margin-top: 15px;
 }
 
 #textInicioCategoriasCatalogoFuente {
@@ -94,11 +94,11 @@ nav {
     font-family: var(--font-family-description, "Mukta Vaani");
     font-size: var(--font-size-size-xs, 12px);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 16px;
+
     /* 133.333% */
-    width: 74px;
-    height: 27px;
+
 }
 
 #merkachecheresTittle {
@@ -224,8 +224,7 @@ nav {
 }
 
 .ImgContainerColumn{ /*Esto centra el contenedor de las 3 imagenes de la izquierda*/
-    position: relative;
-    top: 5px;
+    
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -233,8 +232,10 @@ nav {
 .imgMainGeneralContainer{ /*Esto maneja el contenedor general de todas las imagenes*/
     display: flex;
     margin-top: 50px;
-    position: relative;
-    left: 50px;
+    margin-right: 200px;
+    margin-left: -100px;
+    
+    
     
     
 }
@@ -243,11 +244,15 @@ nav {
 }
 .sectionMainGeneralContainer{
     display: flex;
+    justify-content: center;
+    
+    
 }
 
 .detailsProductContainerGeneral{
     width: 850px;
     height: 650px;
+
     /*Esto ayuda a diferenciar el contenedor de los detalles dle producto*/
 }
 .tittleProductContainer{ /*Esto alinea el titulo del producto con el icono del corazon*/
@@ -290,6 +295,7 @@ line-height: normal;
     display: flex;
     gap: 15px;
     align-items: center;
+
 } 
 .precioContainerValorContainer,.descuentoContainer,.descuentoContainerPorcentaje{
     position: relative;
@@ -305,13 +311,22 @@ line-height: normal;
 /*Esto se encarga de la parte del precio y precio de decuento*/
 #descuentoText{
     color: var(--Verde, #92B869);
-    font-family: var(--font-family-labels, Roboto);
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: strikethrough;
+font-family: var(--font-family-labels, Roboto);
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: strikethrough;
+text-decoration: line-through;
     
+}
+#descuentoText2{
+    color: var(--Negro, #000);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
 }
 #precioText{
     color: var(--Negro, #000);
@@ -583,10 +598,7 @@ border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
 background: var(--verde-30, #B6D09B);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.carritoContainer{
 
-    
-}
 #carritoText{
     color: var(--Negro, #000);
 font-family: var(--font-family-labels, Roboto);
@@ -625,7 +637,9 @@ line-height: normal;
 }
 .precioContainer{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    align-items: center;
+    
 }
 
 
@@ -637,7 +651,7 @@ line-height: normal;
 }
 .productContainer1{
     width: 361px;
-    height: 450px;
+    height: 480px;
     border-radius: 10px;
     border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
 }
@@ -664,9 +678,9 @@ line-height: normal;
 .detallesContainer{
     display: grid;
     gap: 10px;
-    position: relative;
-    left: 35px;
-    top: 15px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 22px;
 }
 .estrellasContainer{
     gap: 10px;
@@ -674,6 +688,7 @@ line-height: normal;
 .estrellaTextoContainer{
     position: relative;
     bottom: -2px;
+    
 }
 
 /*FUENTES*/
@@ -682,7 +697,7 @@ line-height: normal;
 font-family: Roboto;
 font-size: 14px;
 font-style: normal;
-font-weight: 400;
+font-weight: 500;
 line-height: normal;
 }
 #tituloText{
@@ -694,17 +709,27 @@ font-weight: 700;
 line-height: normal;
 }
 
-
-
-
-#hola{
-    color: var(--Negro, #000);
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.descuentoContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 80px;
+    height: 36px;
+    border-radius: 62px;
+    background: var(--verde-30, #B6D09B);
 }
+
+
+#precioNegroText{
+    color: var(--Negro, #000);
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
 #precioVerdeText{
 text-decoration: line-through;
 color: var(--Verde, #92B869);
