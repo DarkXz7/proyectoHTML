@@ -733,7 +733,7 @@ flex-shrink: 0;
 }
 .ContainerGeneralTextosFooter{
   display: flex;
-  
+
 padding: 21px var(--font-size-size-lg, 24px);
 justify-content: space-between;
 align-items: center;
