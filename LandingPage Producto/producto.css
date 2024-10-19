@@ -43,7 +43,7 @@ body {
     gap: 25px;
 }
 
-.navbarSearchBarContainer {
+.navbarSearchBarContainer,.navbarSearchBarContainerResponsive {
     /*Esto centa la SearchBar*/
     position: relative;
     left: -200px;
@@ -52,7 +52,7 @@ body {
 .inicioButtonContainer,
 .catalogoButtonContainer,
 .catalogoButtonContainer,
-.navbarSearchBarContainer,
+.navbarSearchBarContainer,.navbarSearchBarContainerResponsive
 .iniciarSesionButtonContainer,
 .CrearCuentaButtonContainer,
 .navbarLogosContainer,
@@ -64,7 +64,7 @@ body {
     display: flex;
 }
 
-.navbarSearchBarContainer {
+.navbarSearchBarContainer,.navbarSearchBarContainerResponsive {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -114,7 +114,7 @@ nav {
     filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
 }
 
-.navbarSearchBar {
+.navbarSearchBar,.navbarSearchBarResponsive {
     display: flex;
     width: 500px;
     height: 40px;
@@ -143,7 +143,7 @@ nav {
     /* 166.667% */
 }
 
-.navbarSearchBarContainer {
+.navbarSearchBarContainer,.navbarSearchBarContainerResponsive {
     filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
 }
 
@@ -1186,32 +1186,265 @@ line-height: normal;
     
 }
 
-
-@media(max-width:768px){
-    nav{
-        transform: translateX(-100%);
-
+/*NAV BAR RESPONSIVE*/
+/*responsive de la nav bar*/
+@media (max-width: 768px) { /*oculta la navbar cuando tiene 768px o menos la pantalla*/
+    .navBarContainerGeneral {
+        display: none;
+        
     }
-    body{
-        margin-left: 0;
+    .buscadorResponsiveContainer{
+        display: flex;
+        width: 800px;
+    }
+    .navbarSearchBarContainer{ /*contenedor del nav bar responsive*/
+        width: 200px;
     }
 }
 
-@media (max-width:480px){
-    nav{
+
+/*responsive del sidebar desplegable*/
+
+/* Tablets o dispositivos más grandes */
+@media (min-width:768px){ /*oculta el nmenu desplegable cuando esta en modo pantalla completa o mas de 768px (superior a tablets) cuando se supera este ancho, el sidebar desaparece*/
+    .contenedorSideBar,.navbarSearchBarContainerResponsive,.navbarLogosContainerResponsive{
         display: none;
     }
-    body{
-        margin-left: 0;
-    }
+
+    
+    
+    
 }
 
-@media (max-width:368px){
-    nav{
-        transform: translateX(-250px);
-        transform: translateX(0);
+@media (max-width:768px){  /*Esto controla los estilos, pero ahora solo cuando son de 769px o menos*/
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 180px;
+        margin-left: -250px;
     }
-    body{
-        margin-left: 0;
+    .navbarSearchBarContainerResponsive{/*estilos del contenedor general, ayuda a centrarlo a la izquierda*/
+        width: 600px;
+    }
+    .navbarSearchBarContainerResponsive{ /*la barra de busqueda*/
+        position: relative;
+        left: -10px;
+        width: 290px; /*controla el ancho de la barra de busqueda*/
+    }
+    .navBarTextContainer{ /*contenedor del texto de la barra*/
+        margin-bottom: 2px;
+        
+    }
+    .buscadorResponsiveContainer{ /*esto mueve el contenedor padre*/
+        
+        position: relative;
+        left: -5px;
+    }
+    .navbarLogosContainerResponsive{
+        display: flex;
+        gap: 20px;
+        position: relative;
+        left: -10px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    /*Nav bar*/
+}
+
+
+/* Estilos para dispositivos intermedios */
+
+@media (max-width: 600px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 180px;
+        margin-left: -250px;
+    }
+    .navbarSearchBarContainerResponsive{/*estilos del contenedor general, ayuda a centrarlo a la izquierda*/
+        width: 600px;
+    }
+    .navbarSearchBarContainerResponsive{ /*la barra de busqueda*/
+        position: relative;
+        left: -10px;
+        width: 290px; /*controla el ancho de la barra de busqueda*/
+    }
+    .navBarTextContainer{ /*contenedor del texto de la barra*/
+        margin-bottom: 2px;
+        
+    }
+    .buscadorResponsiveContainer{ /*esto mueve el contenedor padre*/
+        
+        position: relative;
+        left: -5px;
+    }
+    .navbarLogosContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+}
+
+/* Teléfonos medianos */
+
+
+
+/* Estilos para dispositivos más grandes */
+@media (max-width: 425px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 425px;
+        margin-left: -250px;
+    }
+    .open-btn{
+        width: 425px;
+    }
+    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+}
+
+@media (max-width: 375px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 520px;
+        margin-left: -150px;
+    }
+    .open-btn{
+        width: 520px;
+    }
+    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+}
+
+
+
+
+/* Teléfonos pequeños */
+@media (max-width: 320px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 390px;
+        margin-left: -220px;
+    }
+    .open-btn{
+        width: 390px;
+    }
+    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo de la sidebar */
+.sidebar {
+    height: 100%; /* Toma el 100% de la altura de la pantalla */
+    width: 0; /* Ancho inicial de la sidebar */
+    position: fixed; /* Fija la sidebar en la pantalla */
+    z-index: 1; /* Coloca la sidebar por encima de otros elementos */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Color de fondo oscuro */
+    overflow-x: hidden; /* Desactiva el scroll horizontal */
+    transition: 0.5s; /* Transición suave al abrir/cerrar */
+    padding-top: 60px; /* Espacio superior para evitar superposición con el botón cerrar */
+}
+
+/* Estilo de los enlaces de la sidebar */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Cambia el color al pasar el mouse sobre los enlaces */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Botón de cerrar en la parte superior derecha */
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Estilo del botón de abrir la sidebar */
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+}
+
+/* Ajusta el contenido principal al abrir la sidebar */
+#main-content {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+/*MAIN RESPONSIVE*/
+
+@media (max-width: 375px) { /*hace que el contenedor de todo el main se ponga a la izquierda y en columna*/
+    .sectionMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -110px;
+        
+    }
+}
+@media (max-width: 375px) { 
+    .imgMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 375px) {  /*Esto mueve el contenedor de las tres imagenes pequeñas*/
+    .ImgContainerColumn {
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        margin-bottom: -100px;
+        
+    }
+    #ImgColum{
+        width: 110px;
+    }
+    #ImgGrandeColum{
+        width: 300px;
+    }
+    .ImgContainerGrande{
+        width: 380px;
+        position: relative;
+        left: 20px;
+
+    }
+    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
+        width: 380px;
     }
 }
