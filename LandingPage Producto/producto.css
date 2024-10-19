@@ -1344,6 +1344,47 @@ line-height: normal;
 
 
 
+/*MAIN RESPONSIVE*/
+
+@media (max-width: 375px) { /*hace que el contenedor de todo el main se ponga a la izquierda y en columna*/
+    .sectionMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -110px;
+        
+    }
+}
+@media (max-width: 375px) { 
+    .imgMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 375px) {  /*Esto mueve el contenedor de las tres imagenes pequeñas*/
+    .ImgContainerColumn {
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        margin-bottom: -100px;
+        
+    }
+    #ImgColum{
+        width: 110px;
+    }
+    #ImgGrandeColum{
+        width: 300px;
+    }
+    .ImgContainerGrande{
+        width: 380px;
+        position: relative;
+        left: 20px;
+
+    }
+    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
+        width: 380px;
+    }
+}
 
 
 
@@ -1406,45 +1447,3 @@ line-height: normal;
 }
 
 
-
-/*MAIN RESPONSIVE*/
-
-@media (max-width: 375px) { /*hace que el contenedor de todo el main se ponga a la izquierda y en columna*/
-    .sectionMainGeneralContainer {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: -110px;
-        
-    }
-}
-@media (max-width: 375px) { 
-    .imgMainGeneralContainer {
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (max-width: 375px) {  /*Esto mueve el contenedor de las tres imagenes pequeñas*/
-    .ImgContainerColumn {
-        display: flex;
-        flex-direction: row;
-        width: 375px;
-        margin-bottom: -100px;
-        
-    }
-    #ImgColum{
-        width: 110px;
-    }
-    #ImgGrandeColum{
-        width: 300px;
-    }
-    .ImgContainerGrande{
-        width: 380px;
-        position: relative;
-        left: 20px;
-
-    }
-    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
-        width: 380px;
-    }
-}
