@@ -1160,7 +1160,7 @@ font-weight: 700;
 line-height: normal;
 }
 #derechosReservadosTexto{
-    color: var(--blanco-marfil-80, #7E7D7C);
+color: var(--blanco-marfil-80, #7E7D7C);
 font-family: var(--font-family-labels, Roboto);
 font-size: 10px;
 font-style: normal;
@@ -1184,4 +1184,34 @@ line-height: normal;
     margin-top: 150px;
     background-color: hsla(39, 35%, 80%, 1);
     
+}
+
+
+@media(max-width:768px){
+    nav{
+        transform: translateX(-100%);
+
+    }
+    body{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:480px){
+    nav{
+        display: none;
+    }
+    body{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:368px){
+    nav{
+        transform: translateX(-250px);
+        transform: translateX(0);
+    }
+    body{
+        margin-left: 0;
+    }
 }
