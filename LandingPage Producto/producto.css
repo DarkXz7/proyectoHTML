@@ -1370,8 +1370,6 @@ line-height: normal;
         margin-bottom: -60px;
         gap: 40px; /*esto separa las fotos de arriba entre si*/
         margin-left: 25px;
-        
-
     }
     #ImgColum{
         width: 130px;
@@ -1394,6 +1392,67 @@ line-height: normal;
         flex-direction: column;
     }
     /*Main*/
+
+    /*Titulo producto y descripcion*/
+    .tittleProductContainer{ /*Esto ubica el titulo del producto*/
+        margin-left: 60px;
+        margin-top: -70px;
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+    #tittleText{
+        font-size: 150%;
+        white-space: nowrap;
+    }
+    .xxx{
+        margin-right: -30px;
+    }
+    .corazoncontainer{
+        margin-bottom: 5px;
+    }
+    /*Detalles del producto*/
+    /*contenedor de las estrellas y rating*/
+    .starsDetailsProductContainer{ 
+        display: flex;
+        width: 350px; /*define el ancho del div*/
+        justify-content: center;
+        margin-left: 40px;
+    }
+    /*precio*/
+    .priceContainerGeneral{
+        width: 370px;
+        margin-left: 50px;
+        
+    }
+    /*descripcion*/
+    .linea1,.linea2{
+        display: none;
+    }
+    .descriptionProductContainer{
+        width: 370px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    /*Color Container*/
+    .colorContainerGeneral{ /*Esto centra el div de los colores*/
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .colorContainer{ /*Dimensiones del div de los colores*/
+        width: 200px;
+        height: 90px;
+    }
+    .colorTextContainer{ /*centra el div del texto "color"*/
+        margin-left: 65px;
+    }
+    .colorContainer2{ /*centra el div de los colores*/
+        display: flex;
+        gap: 20px;
+        margin-left: 20px;
+    }
+    
+    /*Contenedor de los tamaños*/
 }
 
 
