@@ -1411,7 +1411,10 @@ line-height: normal;
     .corazoncontainer{
         margin-bottom: 5px;
     }
+    /*Titulo producto y descripcion*/
+
     /*Detalles del producto*/
+
     /*contenedor de las estrellas y rating*/
     .starsDetailsProductContainer{ 
         display: flex;
@@ -1434,9 +1437,13 @@ line-height: normal;
         margin-left: 50px;
         margin-top: 10px;
     }
+    /*Detalles del producto*/
+
+    /*COLOR*/
+
     /*Color Container*/
     .colorContainerGeneral{ /*Esto centra el div de los colores*/
-        margin-left: 150px;
+        margin-left: 145px;
         margin-top: 30px;
     }
     .colorContainer{ /*Dimensiones del div de los colores*/
@@ -1444,15 +1451,16 @@ line-height: normal;
         height: 90px;
     }
     .colorTextContainer{ /*centra el div del texto "color"*/
-        margin-left: 65px;
+        margin-left: 63px;
     }
     .colorContainer2{ /*centra el div de los colores*/
         display: flex;
         gap: 20px;
         margin-left: 20px;
     }
-    
-    /*Contenedor de los tamaños*/
+    /*COLOR*/
+
+    /*tamaños*/
 }
 
 
