@@ -1536,7 +1536,7 @@ line-height: normal;
         width: 450px;
         
     }
-    #imgproduct{
+    #imgproduct{ /*Esto controla el tamaño de las imágenes de los productos*/
         width: 200px;
     }
 
