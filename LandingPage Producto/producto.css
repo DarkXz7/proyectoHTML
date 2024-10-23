@@ -1186,210 +1186,6 @@ line-height: normal;
     
 }
 
-/*NAV BAR RESPONSIVE*/
-/*responsive de la nav bar*/
-@media (max-width: 768px) { /*oculta la navbar cuando tiene 768px o menos la pantalla*/
-    .navBarContainerGeneral {
-        display: none;
-        
-    }
-    .buscadorResponsiveContainer{
-        display: flex;
-        width: 800px;
-    }
-    .navbarSearchBarContainer{ /*contenedor del nav bar responsive*/
-        width: 200px;
-    }
-}
-
-
-/*responsive del sidebar desplegable*/
-
-/* Tablets o dispositivos más grandes */
-@media (min-width:768px){ /*oculta el nmenu desplegable cuando esta en modo pantalla completa o mas de 768px (superior a tablets) cuando se supera este ancho, el sidebar desaparece*/
-    .contenedorSideBar,.navbarSearchBarContainerResponsive,.navbarLogosContainerResponsive{
-        display: none;
-    }
-
-    
-    
-    
-}
-
-@media (max-width:768px){  /*Esto controla los estilos, pero ahora solo cuando son de 769px o menos*/
-    /*Nav bar*/
-    .contenedorSideBar{
-        display: flex;
-        width: 180px;
-        margin-left: -250px;
-    }
-    .navbarSearchBarContainerResponsive{/*estilos del contenedor general, ayuda a centrarlo a la izquierda*/
-        width: 600px;
-    }
-    .navbarSearchBarContainerResponsive{ /*la barra de busqueda*/
-        position: relative;
-        left: -10px;
-        width: 290px; /*controla el ancho de la barra de busqueda*/
-    }
-    .navBarTextContainer{ /*contenedor del texto de la barra*/
-        margin-bottom: 2px;
-        
-    }
-    .buscadorResponsiveContainer{ /*esto mueve el contenedor padre*/
-        
-        position: relative;
-        left: -5px;
-    }
-    .navbarLogosContainerResponsive{
-        display: flex;
-        gap: 20px;
-        position: relative;
-        left: -10px;
-        margin-left: 50px;
-        margin-top: 10px;
-    }
-    /*Nav bar*/
-}
-
-
-/* Estilos para dispositivos intermedios */
-
-@media (max-width: 600px) {
-    /*Nav bar*/
-    .contenedorSideBar{
-        display: flex;
-        width: 180px;
-        margin-left: -250px;
-    }
-    .navbarSearchBarContainerResponsive{/*estilos del contenedor general, ayuda a centrarlo a la izquierda*/
-        width: 600px;
-    }
-    .navbarSearchBarContainerResponsive{ /*la barra de busqueda*/
-        position: relative;
-        left: -10px;
-        width: 290px; /*controla el ancho de la barra de busqueda*/
-    }
-    .navBarTextContainer{ /*contenedor del texto de la barra*/
-        margin-bottom: 2px;
-        
-    }
-    .buscadorResponsiveContainer{ /*esto mueve el contenedor padre*/
-        
-        position: relative;
-        left: -5px;
-    }
-    .navbarLogosContainerResponsive{
-        display: none;
-    }
-    /*Nav bar*/
-}
-
-/* Teléfonos medianos */
-
-
-
-/* Estilos para dispositivos más grandes */
-@media (max-width: 425px) {
-    /*Nav bar*/
-    .contenedorSideBar{
-        display: flex;
-        width: 425px;
-        margin-left: -250px;
-    }
-    .open-btn{
-        width: 425px;
-    }
-    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
-        display: none;
-    }
-    /*Nav bar*/
-}
-
-@media (max-width: 375px) {
-    /*Nav bar*/
-    .contenedorSideBar{
-        display: flex;
-        width: 520px;
-        margin-left: -150px;
-    }
-    .open-btn{
-        width: 520px;
-    }
-    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
-        display: none;
-    }
-    /*Nav bar*/
-}
-
-
-
-
-/* Teléfonos pequeños */
-@media (max-width: 320px) {
-    /*Nav bar*/
-    .contenedorSideBar{
-        display: flex;
-        width: 390px;
-        margin-left: -220px;
-    }
-    .open-btn{
-        width: 390px;
-    }
-    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
-        display: none;
-    }
-    /*Nav bar*/
-}
-
-
-
-
-/*MAIN RESPONSIVE*/
-
-@media (max-width: 375px) { /*hace que el contenedor de todo el main se ponga a la izquierda y en columna*/
-    .sectionMainGeneralContainer {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: -110px;
-        
-    }
-}
-@media (max-width: 375px) { 
-    .imgMainGeneralContainer {
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (max-width: 375px) {  /*Esto mueve el contenedor de las tres imagenes pequeñas*/
-    .ImgContainerColumn {
-        display: flex;
-        flex-direction: row;
-        width: 375px;
-        margin-bottom: -100px;
-        
-    }
-    #ImgColum{
-        width: 110px;
-    }
-    #ImgGrandeColum{
-        width: 300px;
-    }
-    .ImgContainerGrande{
-        width: 380px;
-        position: relative;
-        left: 20px;
-
-    }
-    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
-        width: 380px;
-    }
-}
-
-
-
-
-
 
 
 
@@ -1445,5 +1241,405 @@ line-height: normal;
     transition: margin-left .5s;
     padding: 16px;
 }
+
+
+
+/*--------------------------------------responsive-------------------------------*/
+/* Escritorio grande */
+@media (min-width: 1280px) {
+    
+}
+
+/* Escritorio pequeño */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    
+}
+
+/* Tabletas medianas */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+}
+
+
+/*NAV BAR RESPONSIVE*/
+/*responsive de la nav bar*/
+@media (max-width: 768px) { /*oculta la navbar cuando tiene 768px o menos la pantalla*/
+    .navBarContainerGeneral {
+        display: none;
+        
+    }
+    .buscadorResponsiveContainer{
+        display: flex;
+        width: 800px;
+    }
+    .navbarSearchBarContainer{ /*contenedor del nav bar responsive*/
+        width: 200px;
+    }
+}
+
+
+/*responsive del sidebar desplegable*/
+
+/* Tablets o dispositivos más grandes */
+@media (min-width:768px){ /*oculta el nmenu desplegable cuando esta en modo pantalla completa o mas de 768px (superior a tablets) cuando se supera este ancho, el sidebar desaparece*/
+    .contenedorSideBar,.navbarSearchBarContainerResponsive,.navbarLogosContainerResponsive{
+        display: none;
+    }
+}
+
+@media (max-width:768px){  /*Esto controla los estilos, pero ahora solo cuando son de 769px o menos*/
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 180px;
+        margin-left: -250px;
+    }
+    .navbarSearchBarContainerResponsive{/*estilos del contenedor general, ayuda a centrarlo a la izquierda*/
+        width: 600px;
+    }
+    .navbarSearchBarContainerResponsive{ /*la barra de busqueda*/
+        position: relative;
+        left: -10px;
+        width: 290px; /*controla el ancho de la barra de busqueda*/
+    }
+    .navBarTextContainer{ /*contenedor del texto de la barra*/
+        margin-bottom: 2px;
+    }
+    .buscadorResponsiveContainer{ /*esto mueve el contenedor padre*/
+        
+        position: relative;
+        left: -5px;
+    }
+    .navbarLogosContainerResponsive{
+        display: flex;
+        gap: 20px;
+        position: relative;
+        left: -10px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    /*Nav bar*/
+
+
+}
+
+
+/* Estilos para dispositivos intermedios */
+
+@media (min-width: 600px) and (max-width: 767px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 180px;
+        margin-left: -260px;
+    }
+    .navbarSearchBarContainerResponsive{/*estilos del contenedor general, ayuda a centrarlo a la izquierda*/
+        width: 600px;
+        
+    }
+    .navbarSearchBarContainerResponsive{ /*la barra de busqueda*/
+        margin-right: 20px;
+        width: 300px; /*controla el ancho de la barra de busqueda*/
+    }
+    .navBarTextContainer{ /*contenedor del texto de la barra*/
+        margin-bottom: 2px;
+        
+    }
+    .buscadorResponsiveContainer{ /*esto mueve el contenedor padre*/
+        gap: -10px;
+        display: flex;
+        position: relative;
+        left: 20px;
+    }
+    .navbarLogosContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+
+    /*Main*/
+    .sectionMainGeneralContainer { /*Contenedor padre de todas las fotos*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -110px;
+    }
+    .ImgContainerColumn {
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        margin-bottom: -60px;
+        gap: 40px; /*esto separa las fotos de arriba entre si*/
+        margin-left: 25px;
+        
+
+    }
+    #ImgColum{
+        width: 130px;
+    }
+    #ImgGrandeColum{
+        width: 300px;
+    }
+    .ImgContainerGrande{ /*contenedor de la imagen grande sisi*/
+        width: 380px;
+        position: relative;
+        left: 100px;
+    
+    }
+    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
+        width: 380px;
+        
+    }
+    .imgMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Main*/
+}
+
+
+
+@media (min-width: 509px) and (max-width: 599px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 600px;
+        margin-left: -280px;
+    }
+    .open-btn{
+        width: 600px;
+    }
+    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+
+    /*Main*/
+    .sectionMainGeneralContainer { /*Contenedor padre de todas las fotos*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -153px;
+    }
+    .ImgContainerColumn {
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        margin-bottom: -60px;
+        gap: 40px; /*esto separa las fotos de arriba entre si*/
+        margin-left: 25px;
+        
+
+    }
+    #ImgColum{
+        width: 130px;
+    }
+    #ImgGrandeColum{
+        width: 300px;
+    }
+    .ImgContainerGrande{ /*contenedor de la imagen grande sisi*/
+        width: 380px;
+        position: relative;
+        left: 100px;
+    
+    }
+    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
+        width: 380px;
+        
+    }
+    .imgMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Main*/
+}
+/* Teléfonos medianos */
+
+
+
+/* Estilos para dispositivos más grandes */
+@media (min-width: 376px) and (max-width: 508px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 600px;
+        margin-left: -280px;
+    }
+    .open-btn{
+        width: 600px;
+    }
+    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+
+    /*Main*/
+    .sectionMainGeneralContainer { /*Contenedor padre de todas las fotos*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -153px;
+    }
+    .ImgContainerColumn {
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        margin-bottom: -60px;
+        gap: 40px; /*esto separa las fotos de arriba entre si*/
+        margin-left: 25px;
+        
+
+    }
+    #ImgColum{
+        width: 130px;
+    }
+    #ImgGrandeColum{
+        width: 300px;
+    }
+    .ImgContainerGrande{ /*contenedor de la imagen grande sisi*/
+        width: 380px;
+        position: relative;
+        left: 100px;
+    
+    }
+    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
+        width: 380px;
+        
+    }
+    .imgMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Main*/
+
+}
+
+
+@media (min-width: 321px) and (max-width: 375px){
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 520px;
+        margin-left: -230px;
+    }
+    .open-btn{
+        width: 520px;
+    }
+    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+    
+    /*Main*/
+    .sectionMainGeneralContainer { /*Contenedor padre de todas las fotos*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -100px;
+    }
+    .ImgContainerColumn {
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        margin-bottom: -130px;
+        gap: 10px; /*esto separa las fotos de arriba entre si*/
+        margin-left: -38px;
+        
+
+    }
+    #ImgColum{
+        width: 110px;
+    }
+    #ImgGrandeColum{
+        width: 250px;
+    }
+    .ImgContainerGrande{ /*contenedor de la imagen grande sisi*/
+        width: 380px;
+        margin-top: 10px;
+        margin-left: 10px;
+        
+    
+    }
+    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
+        width: 380px;
+        
+    }
+    .imgMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Main*/
+    
+}
+/* Teléfonos pequeños */
+
+@media (max-width: 320px) {
+    /*Nav bar*/
+    .contenedorSideBar{
+        display: flex;
+        width: 520px;
+        margin-left: -280px;
+    }
+    .open-btn{
+        width: 520px;
+    }
+    .navbarLogosContainerResponsive,.navbarSearchBarContainerResponsive{
+        display: none;
+    }
+    /*Nav bar*/
+
+
+    /*Main*/
+    .sectionMainGeneralContainer { /*Contenedor padre de todas las fotos*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -100px;
+    }
+    .ImgContainerColumn {
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        margin-bottom: -170px;
+        gap: -10px; /*esto separa las fotos de arriba entre si*/
+        margin-left: -35px;
+        
+
+    }
+    #ImgColum{
+        width: 90px;
+    }
+    #ImgGrandeColum{
+        width: 200px;
+    }
+    .ImgContainerGrande{ /*contenedor de la imagen grande sisi*/
+        width: 380px;
+        margin-top: 10px;
+        margin-left: 5px;
+        
+    
+    }
+    .imgMainGeneralContainer{ /*esto mueve todos los elementos por si solos*/
+        width: 380px;
+        
+    }
+    .imgMainGeneralContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Main*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
