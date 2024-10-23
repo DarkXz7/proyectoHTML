@@ -1413,22 +1413,22 @@ line-height: normal;
     }
     /*Titulo producto y descripcion*/
 
-    /*Detalles del producto*/
+        /*Detalles del producto*/
 
-    /*contenedor de las estrellas y rating*/
+        /*contenedor de las estrellas y rating*/
     .starsDetailsProductContainer{ 
         display: flex;
         width: 350px; /*define el ancho del div*/
         justify-content: center;
         margin-left: 40px;
     }
-    /*precio*/
+        /*precio*/
     .priceContainerGeneral{
         width: 370px;
         margin-left: 50px;
         
     }
-    /*descripcion*/
+        /*descripcion*/
     .linea1,.linea2{
         display: none;
     }
@@ -1441,17 +1441,20 @@ line-height: normal;
 
     /*COLOR*/
 
-    /*Color Container*/
+        /*Color Container*/
     .colorContainerGeneral{ /*Esto centra el div de los colores*/
-        margin-left: 145px;
+        margin-left: 130px;
         margin-top: 30px;
+        
     }
+
     .colorContainer{ /*Dimensiones del div de los colores*/
         width: 200px;
-        height: 90px;
+        height: 100px;
     }
     .colorTextContainer{ /*centra el div del texto "color"*/
         margin-left: 63px;
+        margin-top: 7px;
     }
     .colorContainer2{ /*centra el div de los colores*/
         display: flex;
@@ -1460,7 +1463,115 @@ line-height: normal;
     }
     /*COLOR*/
 
+        /*tamaños*/
+    .tamanoContainerGeneral{
+        margin: 40px;
+        margin-left: 15px;
+        width: 460px;
+        
+
+    }
+    .linea3{
+        width: 100%;
+        margin-left: -70px;
+    }
+    .tamanoTittleContainer{
+        margin-left: 155px;
+        
+        width: 130px;
+    }
+    #tamanoTittle{
+        font-size: 35px;
+    }
+    .tamanoTextContainer{
+        margin-top: 7px;
+    }
     /*tamaños*/
+
+        /*Botones de comprar*/
+    .buttonycantidadContainerGeneral{
+        margin-left: -13px;
+        width: 535px;
+    }
+    .cantidadNumberContainer{ /*centra los iconos poniendo margin al div del "1"*/
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    .cantidadContainer{ /*div del boton de la cantidad*/
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ButtonContainerGeneral{ /*cambia ancho del boton comprar*/
+        width: 170px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .carritoContainerGeneral{ /*cambia ancho del boton cagregar al carrito*/
+        width: 165px;
+    }
+    .carritoContainer{
+        margin-top: 5px;
+    }
+    /*tamaños*/
+
+    /*productos del vendedor*/
+    .productContainer1,.productContainer2{
+        margin-right: -200px;
+    }
+    .titleVendedorContainer{
+        height: 50px;
+        width: 500px;
+    }
+    .tituloContainer{
+        margin-top: 10px;
+    }
+    #vendedorTittle{
+        font-size: 35px;
+    }
+    .productsContainerGeneral{ /*flex direction column para organizar en columna los productos*/
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        
+    }
+    #imgproduct{
+        width: 200px;
+    }
+
+    .imgContainerProduct{
+        margin: -50px;
+    }
+    .precioContainer{
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .estrellasContainer{
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    .productContainer1,.productContainer2.productContainer2{
+        height: 415px;
+
+        width: 450px;
+    }
+    .productContainer2,.productContainer3{
+        margin-top: -250px;
+    }
+
+
+    .caracteristicasSection{ /*esto hace que el siguiente section (caracetristicas) se baje*/
+        margin-top: 1000px;
+    }
+    /*productos del vendedor*/
+
+    /*footer*/
+    .tituloIzquierdaFooterContainer{
+        position: relative;
+        top: -80px;
+        
+    }
 }
 
 
@@ -1518,6 +1629,8 @@ line-height: normal;
         flex-direction: column;
     }
     /*Main*/
+
+    
 }
 /* Teléfonos medianos */
 
