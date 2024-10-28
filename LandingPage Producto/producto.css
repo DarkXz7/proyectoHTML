@@ -1568,11 +1568,66 @@ line-height: normal;
 
 
     /*Caracteristicas del producto*/
-    
+    .caracteristicasDescripcionContainer,.caracteristicasDescripcionContainerGeneral{
+        width: 500px;
+        
+    }
+    .caracteristicasDescripcionContainerGeneral{
+        margin-left: -40px;
+    }
+    .linea4{
+        width: 400px;
+        margin-left: -20px;
+    }
+    .caracteristicasTituloContainer{
+        margin-left: 20px;
+    }
     /*footer*/
     .tituloIzquierdaFooterContainer{
         position: relative;
         top: -80px;
+        
+    }
+    /*Reseñas*/
+    .todaslasresenasContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+    .rightmenuContainerGeneral{
+        margin-top: 20px;
+        
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .resenaContainer{
+        position: absolute;
+        bottom: -2710px;
+    }
+    .filtroContainer{
+        position: absolute;
+        bottom: -2780px;
+    }
+
+    /*comentarios*/
+    .comentariosGeneralContainer{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-left: -54px;
+        
+    }
+    .comentariosSection{
+        width: 900px;
+    }
+    
+    .tituloResenasContainer{
+        display: flex;
+        gap: 30px;
+    }
+    .userComentContainer{
+        width: 60%;
         
     }
 }
